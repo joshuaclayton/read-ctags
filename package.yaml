@@ -1,0 +1,58 @@
+name:                read-ctags
+version:             0.1.0.0
+github:              "joshuaclayton/read-ctags"
+license:             MIT
+author:              "Josh Clayton"
+maintainer:          "sayhi@joshuaclayton.me"
+copyright:           "2019 Josh Clayton"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/joshuaclayton/read-ctags#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- text
+- bytestring
+- directory
+- containers
+
+default-extensions:  OverloadedStrings
+
+library:
+  source-dirs: src
+
+executables:
+  read-ctags:
+    main:                Main.hs
+    source-dirs:         app
+    default-extensions:  OverloadedStrings
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - read-ctags
+    - text
+    - optparse-applicative
+
+tests:
+  read-ctags-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - read-ctags
+    - hspec
