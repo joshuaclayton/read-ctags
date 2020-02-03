@@ -1,24 +1,19 @@
 module System.Ctags
     ( TagSearchOutcome(..)
+    , CtagItem(..)
     , tokensFromFile
     , tokensFromStdin
+    , P.parse
     ) where
 
 import Control.Monad.IO.Class (MonadIO)
-import qualified Data.Text.Lazy as T
+import qualified Data.Bifunctor as BF
 import System.Ctags.Internal
+import qualified System.Ctags.Parser as P
 import System.Ctags.Types
 
-tokensFromFile :: MonadIO m => m (Either TagSearchOutcome [T.Text])
-tokensFromFile = fmap tokensFromTags <$> tagsContent
+tokensFromFile :: MonadIO m => m (Either TagSearchOutcome [CtagItem])
+tokensFromFile = (BF.first UnableToParseTags . P.parse =<<) <$> tagsContent
 
-tokensFromStdin :: MonadIO m => m (Either TagSearchOutcome [T.Text])
-tokensFromStdin = Right . tokensFromTags <$> stdinContent
-
-tokensFromTags :: T.Text -> [T.Text]
-tokensFromTags = filter validTokens . uniqueList . tokenLocations . T.lines
-  where
-    tokenLocations = map (head . T.splitOn "\t")
-
-validTokens :: T.Text -> Bool
-validTokens = not . T.isPrefixOf "!_TAG"
+tokensFromStdin :: MonadIO m => m (Either TagSearchOutcome [CtagItem])
+tokensFromStdin = BF.first UnableToParseTags . P.parse <$> stdinContent

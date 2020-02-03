@@ -25,6 +25,8 @@ dependencies:
 - bytestring
 - directory
 - containers
+- megaparsec
+- aeson
 
 default-extensions:  OverloadedStrings
 

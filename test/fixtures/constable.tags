@@ -1,0 +1,831 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A11YswitchCheck	../assets/js/checkbox-switch.js	/^const A11YswitchCheck = function() {$/;"	c
+A11YswitchCheck	../assets/js/checkbox-switch.js	/^const A11YswitchCheck = function() {$/;"	f
+AcceptanceCase	../test/support/acceptance_case.ex	/^defmodule ConstableWeb.AcceptanceCase do$/;"	m
+AddActiveToUser	../priv/repo/migrations/20160610142434_add_active_to_user.exs	/^defmodule Elixir.Constable.Repo.Migrations.AddActiveToUser do$/;"	m
+AddLastDiscussedToAnnouncements	../priv/repo/migrations/20160422175132_add_last_discussed_to_announcements.exs	/^defmodule Constable.Repo.Migrations.AddLastDiscussedToAnnouncements do$/;"	m
+AddNameToUsers	../priv/repo/migrations/20150213213319_add_name_to_users.exs	/^defmodule Constable.Repo.Migrations.AddNameToUsers do$/;"	m
+AddNotNullConstraintToRequiredForeignKeys	../priv/repo/migrations/20160624194052_add_not_null_constraint_to_required_foreign_keys.exs	/^defmodule Constable.Repo.Migrations.AddNotNullConstraintToRequiredForeignKeys do$/;"	m
+AddNotificationSettingsToUsers	../priv/repo/migrations/20150909175723_add_notification_settings_to_users.exs	/^defmodule Constable.Repo.Migrations.AddNotificationSettingsToUsers do$/;"	m
+AddNullConstrainToUsername	../priv/repo/migrations/20150826133822_add_null_constraint_to_username.exs	/^defmodule Constable.Repo.Migrations.AddNullConstrainToUsername do$/;"	m
+AddSlackWebhookToInterest	../priv/repo/migrations/20151218210106_add_slack_channel_to_interest.exs	/^defmodule Constable.Repo.Migrations.AddSlackWebhookToInterest do$/;"	m
+AddSlugToAnnouncements	../priv/repo/migrations/20180413164621_add_slug_to_announcements.exs	/^defmodule Constable.Repo.Migrations.AddSlugToAnnouncements do$/;"	m
+AddSubscriptionsTable	../priv/repo/migrations/20150226150429_add_subscriptions_table.exs	/^defmodule Constable.Repo.Migrations.AddSubscriptionsTable do$/;"	m
+AddTokenToSubscription	../priv/repo/migrations/20150921193646_add_token_to_subscription.exs	/^defmodule Constable.Repo.Migrations.AddTokenToSubscription do$/;"	m
+AddUserToAnnouncements	../priv/repo/migrations/20150212191157_add_user_to_announcements.exs	/^defmodule Constable.Repo.Migrations.AddUserToAnnouncements do$/;"	m
+AddUserToComments	../priv/repo/migrations/20150212203030_add_user_to_comments.exs	/^defmodule Constable.Repo.Migrations.AddUserToComments do$/;"	m
+AddUsernameToUsers	../priv/repo/migrations/20150825202821_add_username_to_users.exs	/^defmodule Constable.Repo.Migrations.AddUsernameToUsers do$/;"	m
+Announcement	../lib/constable/models/announcement.ex	/^defmodule Constable.Announcement do$/;"	m
+AnnouncementController	../lib/constable_web/controllers/announcement_controller.ex	/^defmodule ConstableWeb.AnnouncementController do$/;"	m
+AnnouncementController	../lib/constable_web/controllers/api/announcement_controller.ex	/^defmodule ConstableWeb.Api.AnnouncementController do$/;"	m
+AnnouncementControllerTest	../test/controllers/announcement_controller_test.exs	/^defmodule ConstableWeb.AnnouncementControllerTest do$/;"	m
+AnnouncementControllerTest	../test/controllers/api/announcement_controller_test.exs	/^defmodule ConstableWeb.Api.AnnouncementControllerTest do$/;"	m
+AnnouncementCreator	../lib/constable/services/announcement_creator.ex	/^defmodule Constable.Services.AnnouncementCreator do$/;"	m
+AnnouncementCreatorTest	../test/services/announcement_creator_test.exs	/^defmodule Constable.Services.AnnouncementCreatorTest do$/;"	m
+AnnouncementInterest	../lib/constable/models/announcement_interest.ex	/^defmodule Constable.AnnouncementInterest do$/;"	m
+AnnouncementInterestAssociator	../lib/constable/services/announcement_interest_associator.ex	/^defmodule Constable.Services.AnnouncementInterestAssociator do$/;"	m
+AnnouncementListView	../lib/constable_web/views/announcement_list_view.ex	/^defmodule ConstableWeb.AnnouncementListView do$/;"	m
+AnnouncementTest	../test/mailers/announcement_mailer_test.exs	/^defmodule Constable.Mailers.AnnouncementTest do$/;"	m
+AnnouncementTest	../test/models/announcement_test.exs	/^defmodule Constable.AnnouncementTest do$/;"	m
+AnnouncementUpdater	../lib/constable/services/announcement_updater.ex	/^defmodule Constable.Services.AnnouncementUpdater do$/;"	m
+AnnouncementUpdaterTest	../test/services/announcement_updater_test.exs	/^defmodule Constable.Services.AnnouncementUpdaterTest do$/;"	m
+AnnouncementView	../lib/constable_web/views/announcement_view.ex	/^defmodule ConstableWeb.AnnouncementView do$/;"	m
+AnnouncementView	../lib/constable_web/views/api/announcement_view.ex	/^defmodule ConstableWeb.Api.AnnouncementView do$/;"	m
+AnnouncementViewTest	../test/views/api/announcement_view_test.exs	/^defmodule ConstableWeb.Api.AnnouncementViewTest do$/;"	m
+Application	../lib/constable/application.ex	/^defmodule Constable.Application do$/;"	m
+AuthController	../lib/constable_web/controllers/auth_controller.ex	/^defmodule ConstableWeb.AuthController do$/;"	m
+AuthControllerTest	../test/controllers/auth_controller_test.exs	/^defmodule ConstableWeb.AuthControllerTest do$/;"	m
+AuthView	../lib/constable_web/views/auth_view.ex	/^defmodule ConstableWeb.AuthView do$/;"	m
+AuthViewTest	../test/views/auth_view_test.exs	/^defmodule ConstableWeb.AuthViewTest do$/;"	m
+Autocomplete	../assets/js/app.js	/^global.constable.userAutocomplete = require('.\/user-autocomplete');$/;"	c
+ChangesetView	../lib/constable_web/views/changeset_view.ex	/^defmodule ConstableWeb.ChangesetView do$/;"	m
+ChannelCase	../test/support/channel_case.ex	/^defmodule ConstableWeb.ChannelCase do$/;"	m
+CodeBlocks	../assets/js/syntax-highlighting.js	/^const highlightCodeBlocks = function() {$/;"	c
+Comment	../assets/js/comment-form.js	/^  const savedComment = getCommentFromLocalStorage();$/;"	c
+Comment	../lib/constable/models/comment.ex	/^defmodule Constable.Comment do$/;"	m
+CommentController	../lib/constable_web/controllers/api/comment_controller.ex	/^defmodule ConstableWeb.Api.CommentController do$/;"	m
+CommentController	../lib/constable_web/controllers/comment_controller.ex	/^defmodule ConstableWeb.CommentController do$/;"	m
+CommentControllerTest	../test/controllers/api/comment_controller_test.exs	/^defmodule ConstableWeb.Api.CommentControllerTest do$/;"	m
+CommentControllerTest	../test/controllers/comment_controller_test.exs	/^defmodule ConstableWeb.CommentControllerTest do$/;"	m
+CommentCreator	../lib/constable/services/comment_creator.ex	/^defmodule Constable.Services.CommentCreator do$/;"	m
+CommentCreatorTest	../test/services/comment_creator_test.exs	/^defmodule Constable.Services.CommentCreatorTest do$/;"	m
+CommentMailerTest	../test/mailers/comment_mailer_test.exs	/^defmodule Constable.Mailers.CommentMailerTest do$/;"	m
+CommentTest	../test/models/comment_test.exs	/^defmodule Constable.CommentTest do$/;"	m
+CommentView	../lib/constable_web/views/api/comment_view.ex	/^defmodule ConstableWeb.Api.CommentView do$/;"	m
+CommentView	../lib/constable_web/views/comment_view.ex	/^defmodule ConstableWeb.CommentView do$/;"	m
+CommentViewTest	../test/views/api/comment_view_test.exs	/^defmodule ConstableWeb.Api.CommentViewTest do$/;"	m
+ConnCase	../test/support/conn_case.ex	/^defmodule ConstableWeb.ConnCase do$/;"	m
+ConnCaseHelper	../test/support/conn_case_helper.ex	/^defmodule ConstableWeb.ConnCaseHelper do$/;"	m
+Constable	../lib/constable.ex	/^defmodule Constable do$/;"	m
+ConstableWeb	../lib/constable_web.ex	/^defmodule ConstableWeb do$/;"	m
+Container	../assets/js/announcement-form-mobile.js	/^  const markdownContainer = $('.announcement-create');$/;"	c
+Container	../assets/js/announcement-form-mobile.js	/^  const previewContainer = $('.announcement-preview');$/;"	c
+ControllerHelper	../lib/constable_web/controller_helper.ex	/^defmodule ConstableWeb.ControllerHelper do$/;"	m
+CopyWebpackPlugin	../assets/webpack.config.js	/^const CopyWebpackPlugin = require('copy-webpack-plugin');$/;"	c
+CreateAnnouncements	../priv/repo/migrations/20150204170307_create_announcements.exs	/^defmodule Constable.Repo.Migrations.CreateAnnouncements do$/;"	m
+CreateAnnouncementsInterests	../priv/repo/migrations/20150227200438_create_announcements_interests.exs	/^defmodule Constable.Repo.Migrations.CreateAnnouncementsInterests do$/;"	m
+CreateComments	../priv/repo/migrations/20150209232905_create_comments.exs	/^defmodule Constable.Repo.Migrations.CreateComments do$/;"	m
+CreateInterests	../priv/repo/migrations/20150226184100_create_interests.exs	/^defmodule Constable.Repo.Migrations.CreateInterests do$/;"	m
+CreateUsers	../priv/repo/migrations/20150206153434_create_users.exs	/^defmodule Constable.Repo.Migrations.CreateUsers do$/;"	m
+CreateUsersInterests	../priv/repo/migrations/20150227210639_create_users_interests.exs	/^defmodule Constable.Repo.Migrations.CreateUsersInterests do$/;"	m
+CustomScrubber	../lib/constable/services/customer_scrubber.ex	/^defmodule Constable.CustomScrubber do$/;"	m
+DELIMITER	../assets/js/announcement-form.js	/^const DELIMITER = ',';$/;"	n
+DailyDigest	../lib/constable/services/daily_digest.ex	/^defmodule Constable.DailyDigest do$/;"	m
+DailyDigestTest	../test/services/daily_digest_test.exs	/^defmodule Constable.DailyDigestTest do$/;"	m
+Deslugifier	../lib/constable/plugs/deslugifier.ex	/^defmodule Constable.Plugs.Deslugifier do$/;"	m
+DeslugifierTest	../test/plugs/deslugifier_test.exs	/^defmodule Constable.Plugs.DeslugifierTest do$/;"	m
+EmailForwardController	../lib/constable_web/controllers/email_forward_controller.ex	/^defmodule ConstableWeb.EmailForwardController do$/;"	m
+EmailForwardControllerTest	../test/controllers/email_forward_controller_test.exs	/^defmodule ConstableWeb.EmailForwardControllerTest do$/;"	m
+EmailPreviewController	../lib/constable_web/controllers/email_preview_controller.ex	/^defmodule ConstableWeb.EmailPreviewController do$/;"	m
+EmailReplyController	../lib/constable_web/controllers/email_reply_controller.ex	/^defmodule ConstableWeb.EmailReplyController do$/;"	m
+EmailReplyParser	../lib/constable/services/email_reply_parser.ex	/^defmodule Constable.EmailReplyParser do$/;"	m
+EmailReplyParserTest	../test/services/email_reply_parser_test.exs	/^defmodule Constable.EmailReplyParserTest do$/;"	m
+EmailReplyTest	../test/controllers/email_reply_controller_test.exs	/^defmodule ConstableWeb.EmailReplyTest do$/;"	m
+EmailView	../lib/constable_web/views/email_view.ex	/^defmodule ConstableWeb.EmailView do$/;"	m
+EmailViewTest	../test/views/email_view_test.exs	/^defmodule ConstableWeb.EmailViewTest do$/;"	m
+Emails	../lib/constable_web/emails.ex	/^defmodule Constable.Emails do$/;"	m
+EmailsTest	../test/emails_test.exs	/^defmodule Constable.EmailsTest do$/;"	m
+Encoder	../lib/constable/models/serializers/announcement.ex	/^defimpl Poison.Encoder, for: Constable.Announcement do$/;"	i
+Encoder	../lib/constable/models/serializers/comment.ex	/^defimpl Poison.Encoder, for: Constable.Comment do$/;"	i
+Encoder	../lib/constable/models/serializers/interest.ex	/^defimpl Poison.Encoder, for: Constable.Interest do$/;"	i
+Encoder	../lib/constable/models/serializers/subscription.ex	/^defimpl Poison.Encoder, for: Constable.Subscription do$/;"	i
+Encoder	../lib/constable/models/serializers/user.ex	/^defimpl Poison.Encoder, for: Constable.User do$/;"	i
+Encoder	../lib/constable/models/serializers/user_interest.ex	/^defimpl Poison.Encoder, for: Constable.UserInterest do$/;"	i
+Endpoint	../lib/constable_web/endpoint.ex	/^defmodule ConstableWeb.Endpoint do$/;"	m
+EnumHelper	../lib/enum_helper.ex	/^defmodule Constable.EnumHelper do$/;"	m
+Env	../lib/constable/env.ex	/^defmodule Constable.Env do$/;"	m
+EnvOverrideRedirectStrategy	../test/controllers/auth_controller_test.exs	/^  defmodule EnvOverrideRedirectStrategy do$/;"	m
+ErrorHelpers	../lib/constable_web/views/error_helpers.ex	/^defmodule ConstableWeb.ErrorHelpers do$/;"	m
+ErrorView	../lib/constable_web/views/error_view.ex	/^defmodule ConstableWeb.ErrorView do$/;"	m
+Events	../assets/js/checkbox-switch.js	/^  const attachEvents = function(el) {$/;"	c
+Events	../assets/js/checkbox-switch.js	/^  let keyEvents = function(e) {$/;"	c
+Factory	../lib/constable/factory.ex	/^defmodule Constable.Factory do$/;"	m
+FakeGoogleStrategy	../lib/constable/services/fake_google_strategy.ex	/^defmodule FakeGoogleStrategy do$/;"	m
+FakeProfileProvider	../lib/constable/services/fake_profile_provider.ex	/^defmodule FakeProfileProvider do$/;"	m
+FakeRequestWithAccessToken	../test/controllers/auth_controller_test.exs	/^  defmodule FakeRequestWithAccessToken do$/;"	m
+FakeTokenInfoGoogleStrategy	../test/controllers/auth_controller_test.exs	/^  defmodule FakeTokenInfoGoogleStrategy do$/;"	m
+FakeTokenRetriever	../test/controllers/auth_controller_test.exs	/^  defmodule FakeTokenRetriever do$/;"	m
+FetchCurrentUser	../lib/constable/plugs/fetch_current_user.ex	/^defmodule Constable.Plugs.FetchCurrentUser do$/;"	m
+FetchCurrentUserTest	../test/plugs/fetch_current_user_test.exs	/^defmodule Constable.Plugs.FetchCurrentUserTest do$/;"	m
+Form	../assets/js/app.js	/^global.constable.announcementForm = require('.\/announcement-form');$/;"	c
+Form	../assets/js/app.js	/^global.constable.commentForm = require('.\/comment-form');$/;"	c
+Form	../assets/js/comment-form.js	/^const initializeForm = function(usersForAutoComplete) {$/;"	c
+FormMobile	../assets/js/app.js	/^global.constable.announcementFormMobile = require('.\/announcement-form-mobile');$/;"	c
+Formatter	../lib/constable/models/user.ex	/^  defimpl Bamboo.Formatter do$/;"	i
+GenerateSubscriptionTokens	../priv/repo/migrations/20150921194253_generate_subscription_tokens.exs	/^defmodule Constable.Repo.Migrations.GenerateSubscriptionTokens do$/;"	m
+Gettext	../lib/constable_web/gettext.ex	/^defmodule ConstableWeb.Gettext do$/;"	m
+GoogleStrategy	../lib/constable/services/google_strategy.ex	/^defmodule GoogleStrategy do$/;"	m
+GoogleStrategyTest	../test/services/google_strategy_test.exs	/^defmodule Constable.GoogleStrategyTest do$/;"	m
+Header	../assets/js/announcement-form-mobile.js	/^  const markdownHeader = $('.header-tag-markdown');$/;"	c
+Header	../assets/js/announcement-form-mobile.js	/^  const previewHeader = $('.header-tag-preview');$/;"	c
+Highlighting	../assets/js/app.js	/^global.constable.syntaxHighlighting = require('.\/syntax-highlighting');$/;"	c
+HomeController	../lib/constable_web/controllers/home_controller.ex	/^defmodule ConstableWeb.HomeController do$/;"	m
+HomeControllerTest	../test/controllers/home_controller_test.exs	/^defmodule ConstableWeb.HomeControllerTest do$/;"	m
+HubProfileProvider	../lib/constable/services/hub_profile_provider.ex	/^defmodule Constable.Services.HubProfileProvider do$/;"	m
+HubProfileProviderTest	../test/services/hub_profile_test.exs	/^defmodule Constable.Services.HubProfileProviderTest do$/;"	m
+IgnoreEnvRedirectStrategy	../test/controllers/auth_controller_test.exs	/^  defmodule IgnoreEnvRedirectStrategy do$/;"	m
+ImageUploader	../assets/js/app.js	/^global.constable.textareaImageUploader = require('.\/textarea-image-uploader');$/;"	c
+Interest	../lib/constable/models/interest.ex	/^defmodule Constable.Interest do$/;"	m
+InterestController	../lib/constable_web/controllers/api/interest_controller.ex	/^defmodule ConstableWeb.Api.InterestController do$/;"	m
+InterestController	../lib/constable_web/controllers/interest_controller.ex	/^defmodule ConstableWeb.InterestController do$/;"	m
+InterestControllerTest	../test/controllers/api/interest_controller_test.exs	/^defmodule ConstableWeb.Api.InterestControllerTest do$/;"	m
+InterestControllerTest	../test/controllers/interest_controller_test.exs	/^defmodule ConstableWeb.InterestControllerTest do$/;"	m
+InterestTest	../test/models/interest_test.exs	/^defmodule Constable.InterestTest do$/;"	m
+InterestView	../lib/constable_web/views/api/interest_view.ex	/^defmodule ConstableWeb.Api.InterestView do$/;"	m
+InterestView	../lib/constable_web/views/interest_view.ex	/^defmodule ConstableWeb.InterestView do$/;"	m
+InterestViewTest	../test/views/api/interest_view_test.exs	/^defmodule ConstableWeb.Api.InterestViewTest do$/;"	m
+LayoutView	../lib/constable_web/views/layout_view.ex	/^defmodule ConstableWeb.LayoutView do$/;"	m
+LiveHtmlChannel	../lib/constable_web/channels/live_html_channel.ex	/^defmodule ConstableWeb.LiveHtmlChannel do$/;"	m
+Mailer	../lib/constable/mailer.ex	/^defmodule Constable.Mailer do$/;"	m
+MakeAnnouncementSlugsNonNullable	../priv/repo/migrations/20180511201013_make_announcement_slugs_non_nullable.exs	/^defmodule Constable.Repo.Migrations.MakeAnnouncementSlugsNonNullable do$/;"	m
+Markdown	../lib/constable/markdown.ex	/^defmodule Constable.Markdown do$/;"	m
+MarkdownPreview	../assets/js/textarea-image-uploader.js	/^const refreshMarkdownPreview = function(inputSelector) {$/;"	c
+MarkdownTest	../test/lib/constable/markdown_test.exs	/^defmodule Constable.MarkdownTest do$/;"	m
+MentionFinder	../lib/constable/services/mention_finder.ex	/^defmodule Constable.Services.MentionFinder do$/;"	m
+MentionFinderTest	../test/services/mention_finder_test.exs	/^defmodule Constable.Services.MentionFinderTest do$/;"	m
+MiniCssExtractPlugin	../assets/webpack.config.js	/^const MiniCssExtractPlugin = require('mini-css-extract-plugin');$/;"	c
+MixProject	../mix.exs	/^defmodule Constable.MixProject do$/;"	m
+ModelCase	../test/support/model_case.ex	/^defmodule Constable.ModelCase do$/;"	m
+NewComment	../assets/js/comment-form.js	/^const initializeNewComment = () => {$/;"	c
+NewCommentTest	../test/acceptance/new_comment_test.exs	/^defmodule ConstableWeb.NewCommentTest do$/;"	m
+NonThoughtbotRequestWithAccessToken	../test/controllers/auth_controller_test.exs	/^  defmodule NonThoughtbotRequestWithAccessToken do$/;"	m
+NonThoughtbotTokenInfoGoogleStrategy	../test/controllers/auth_controller_test.exs	/^  defmodule NonThoughtbotTokenInfoGoogleStrategy do$/;"	m
+OAuthRedirectStrategy	../lib/constable/services/oauth_redirect_strategy.ex	/^defmodule OAuthRedirectStrategy do$/;"	m
+OptimizeCSSAssetsPlugin	../assets/webpack.config.js	/^const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');$/;"	c
+Options	../assets/js/textarea-image-uploader.js	/^  const shuboxOptions = {$/;"	c
+Pact	../lib/constable/pact.ex	/^defmodule Constable.Pact do$/;"	m
+Param	../lib/constable/models/announcement.ex	/^defimpl Phoenix.Param, for: Constable.Announcement do$/;"	i
+Param	../lib/constable/models/interest.ex	/^  defimpl Phoenix.Param do$/;"	i
+Preview	../assets/js/comment-form.js	/^  const commentPreview = $('.comment-preview');$/;"	c
+PreviewButton	../assets/js/comment-form.js	/^  const viewPreviewButton = $('.comment-preview-markdown-button');$/;"	c
+ProfileProvider	../lib/constable/services/profile_provider.ex	/^defmodule Constable.Services.ProfileProvider do$/;"	m
+RecipientsPreviewController	../lib/constable_web/controllers/recipients_preview_controller.ex	/^defmodule ConstableWeb.RecipientsPreviewController do$/;"	m
+RecipientsPreviewControllerTest	../test/controllers/recipients_preview_controller_test.exs	/^defmodule ContableWeb.RecipientsPreviewControllerTest do$/;"	m
+RecipientsPreviewView	../lib/constable_web/views/recipients_preview_view.ex	/^defmodule ConstableWeb.RecipientsPreviewView do$/;"	m
+RefreshLastDiscussedAt	../lib/mix/tasks/refresh_last_discussed_at.ex	/^defmodule Mix.Tasks.Constable.RefreshLastDiscussedAt do$/;"	m
+Repo	../lib/constable/repo.ex	/^defmodule Constable.Repo do$/;"	m
+RepoTest	../test/lib/repo_test.exs	/^defmodule Constable.RepoTest do$/;"	m
+RequireApiLogin	../lib/constable/plugs/require_api_login.ex	/^defmodule Constable.Plugs.RequireApiLogin do$/;"	m
+RequireApiLoginTest	../test/plugs/api_auth_test.exs	/^defmodule Constable.Plugs.RequireApiLoginTest do$/;"	m
+RequireWebLogin	../lib/constable/plugs/require_web_login.ex	/^defmodule Constable.Plugs.RequireWebLogin do$/;"	m
+RequireWebLoginTest	../test/plugs/require_web_login_test.exs	/^defmodule Constable.Plugs.RequireWebLoginTest do$/;"	m
+Role	../assets/js/checkbox-switch.js	/^  const setRole = function(el) {$/;"	c
+Router	../lib/constable_web/router.ex	/^defmodule ConstableWeb.Router do$/;"	m
+SAVE_SHORTCUT	../assets/js/comment-form.js	/^const SAVE_SHORTCUT = [ 'mod+enter' ];$/;"	n
+SearchController	../lib/constable_web/controllers/api/search_controller.ex	/^defmodule ConstableWeb.Api.SearchController do$/;"	m
+SearchController	../lib/constable_web/controllers/search_controller.ex	/^defmodule ConstableWeb.SearchController do$/;"	m
+SearchControllerTest	../test/controllers/search_controller_test.exs	/^defmodule ConstableWeb.SearchControllerTest do$/;"	m
+SearchView	../lib/constable_web/views/search_view.ex	/^defmodule ConstableWeb.SearchView do$/;"	m
+SearchesControllerTest	../test/controllers/api/search_controller_test.exs	/^defmodule ConstableWeb.Api.SearchesControllerTest do$/;"	m
+Send	../assets/js/comment-form.js	/^      beforeSend: () => disableForm(form),$/;"	c
+SendDailyDigest	../lib/mix/tasks/send_daily_digest.ex	/^defmodule Mix.Tasks.Constable.SendDailyDigest do$/;"	m
+SendDailyDigestTest	../test/lib/mix/send_daily_digest_test.exs	/^defmodule Mix.Tasks.Constable.SendDailyDigestTest do$/;"	m
+Serializers	../lib/constable/models/serializers/serializers.ex	/^defmodule Constable.Serializers do$/;"	m
+SessionController	../lib/constable_web/controllers/session_controller.ex	/^defmodule ConstableWeb.SessionController do$/;"	m
+SessionControllerTest	../test/controllers/session_controller_test.exs	/^defmodule ConstableWeb.SessionControllerTest do$/;"	m
+SessionView	../lib/constable_web/views/session_view.ex	/^defmodule ConstableWeb.SessionView do$/;"	m
+SetAutosubscribeDefaultToTrue	../priv/repo/migrations/20150918165253_set_autosubscribe_default_to_true.exs	/^defmodule Constable.Repo.Migrations.SetAutosubscribeDefaultToTrue do$/;"	m
+SetUserIdFromParams	../lib/constable/plugs/set_user_id_from_params.ex	/^defmodule Constable.Plugs.SetUserIdFromParams do$/;"	m
+SettingsController	../lib/constable_web/controllers/settings_controller.ex	/^defmodule ConstableWeb.SettingsController do$/;"	m
+SettingsControllerTest	../test/controllers/settings_controller_test.exs	/^defmodule ConstableWeb.SettingsControllerTest do$/;"	m
+SettingsView	../lib/constable_web/views/settings_view.ex	/^defmodule ConstableWeb.SettingsView do$/;"	m
+SharedView	../lib/constable_web/views/shared_view.ex	/^defmodule ConstableWeb.SharedView do$/;"	m
+SharedViewTest	../test/views/shared_view_test.exs	/^defmodule ConstableWeb.SharedViewTest do$/;"	m
+SlackChannelController	../lib/constable_web/controllers/slack_channel_controller.ex	/^defmodule ConstableWeb.SlackChannelController do$/;"	m
+SlackChannelView	../lib/constable_web/views/slack_channel_view.ex	/^defmodule ConstableWeb.SlackChannelView do$/;"	m
+SlackHook	../lib/constable/services/slack_hook.ex	/^defmodule Constable.Services.SlackHook do$/;"	m
+Strategy	../assets/js/user-autocomplete.js	/^  const usernameStrategy = {$/;"	c
+Subscription	../lib/constable/models/subscription.ex	/^defmodule Constable.Subscription do$/;"	m
+Subscription	../priv/repo/migrations/20150921194253_generate_subscription_tokens.exs	/^  defmodule Subscription do$/;"	m
+SubscriptionController	../lib/constable_web/controllers/api/subscription_controller.ex	/^defmodule ConstableWeb.Api.SubscriptionController do$/;"	m
+SubscriptionController	../lib/constable_web/controllers/subscriptions_controller.ex	/^defmodule ConstableWeb.SubscriptionController do$/;"	m
+SubscriptionControllerTest	../test/controllers/api/subscription_controller_test.exs	/^defmodule ConstableWeb.Api.SubscriptionControllerTest do$/;"	m
+SubscriptionControllerTest	../test/controllers/subscription_controller_test.exs	/^defmodule ConstableWeb.SubscriptionControllerTest do$/;"	m
+SubscriptionView	../lib/constable_web/views/api/subscription_view.ex	/^defmodule ConstableWeb.Api.SubscriptionView do$/;"	m
+SubscriptionView	../lib/constable_web/views/subscription_view.ex	/^defmodule ConstableWeb.SubscriptionView do$/;"	m
+SubscriptionViewTest	../test/views/api/subscription_view_test.exs	/^defmodule ConstableWeb.Api.SubscriptionViewTest do$/;"	m
+TerserPlugin	../assets/webpack.config.js	/^const TerserPlugin = require('terser-webpack-plugin');$/;"	c
+TestWithEcto	../test/support/test_with_ecto.ex	/^defmodule Constable.TestWithEcto do$/;"	m
+TextArea	../assets/js/comment-form.js	/^  const commentTextArea = $('.comment-textarea');$/;"	c
+TextButton	../assets/js/comment-form.js	/^  const viewTextButton = $('.comment-preview-text-button');$/;"	c
+Time	../lib/constable/time.ex	/^defmodule Constable.Time do$/;"	m
+UnsubscribeController	../lib/constable_web/controllers/unsubscribe_controller.ex	/^defmodule ConstableWeb.UnsubscribeController do$/;"	m
+UpdateChannel	../lib/constable_web/channels/update_channel.ex	/^defmodule ConstableWeb.UpdateChannel do$/;"	m
+User	../lib/constable/models/user.ex	/^defmodule Constable.User do$/;"	m
+UserActivationController	../lib/constable_web/controllers/user_activation_controller.ex	/^defmodule ConstableWeb.UserActivationController do$/;"	m
+UserActivationControllerTest	../test/controllers/user_activation_controller_test.exs	/^defmodule ConstableWeb.UserActivationControllerTest do$/;"	m
+UserActivationView	../lib/constable_web/views/user_activation_view.ex	/^defmodule ConstableWeb.UserActivationView do$/;"	m
+UserAnnouncementTest	../test/acceptance/user_announcement_test.exs	/^defmodule ConstableWeb.UserAnnouncementTest do$/;"	m
+UserController	../lib/constable_web/controllers/api/user_controller.ex	/^defmodule ConstableWeb.Api.UserController do$/;"	m
+UserControllerTest	../test/controllers/api/user_controller_test.exs	/^defmodule ConstableWeb.Api.UserControllerTest do$/;"	m
+UserControlsSettingsTest	../test/acceptance/user_controls_settings_test.exs	/^defmodule ConstableWeb.UserControlsSettingsTest do$/;"	m
+UserIdentifier	../lib/constable/models/user_identifier.ex	/^defmodule Constable.UserIdentifier do$/;"	m
+UserInterest	../lib/constable/models/user_interest.ex	/^defmodule Constable.UserInterest do$/;"	m
+UserInterestController	../lib/constable_web/controllers/api/user_interest_controller.ex	/^defmodule ConstableWeb.Api.UserInterestController do$/;"	m
+UserInterestController	../lib/constable_web/controllers/user_interest_controller.ex	/^defmodule ConstableWeb.UserInterestController do$/;"	m
+UserInterestControllerTest	../test/controllers/api/user_interest_controller_test.exs	/^defmodule ConstableWeb.Api.UserInterestControllerTest do$/;"	m
+UserInterestTest	../test/models/user_interest_test.exs	/^defmodule Constable.UserInterestTest do$/;"	m
+UserInterestView	../lib/constable_web/views/api/user_interest_view.ex	/^defmodule ConstableWeb.Api.UserInterestView do$/;"	m
+UserInterestViewTest	../test/views/api/user_interest_view_test.exs	/^defmodule ConstableWeb.Api.UserInterestViewTest do$/;"	m
+UserManagesInterestsTest	../test/acceptance/user_manages_interests_test.exs	/^defmodule ConstableWeb.UserManagesInterestsTest do$/;"	m
+UserSearchesAnnouncementsTest	../test/acceptance/user_searches_announcements_test.exs	/^defmodule ConstableWeb.UserSearchesAnnouncementsTest do$/;"	m
+UserSetsSlackChannelForInterestTest	../test/acceptance/user_sets_slack_channel_for_interest_test.exs	/^defmodule ConstableWeb.UserSetsSlackChannelForInterestTest do$/;"	m
+UserSocket	../lib/constable_web/channels/user_socket.ex	/^defmodule ConstableWeb.UserSocket do$/;"	m
+UserTest	../test/models/user_test.exs	/^defmodule Constable.UserTest do$/;"	m
+UserUnsubscribesTest	../test/acceptance/user_unsubscribes_test.exs	/^defmodule ConstableWeb.UserUnsubscribesTest do$/;"	m
+UserView	../lib/constable_web/views/api/user_view.ex	/^defmodule ConstableWeb.Api.UserView do$/;"	m
+UserViewTest	../test/views/api/user_view_test.exs	/^defmodule ConstableWeb.Api.UserViewTest do$/;"	m
+UsubscribeControllerTest	../test/controllers/unsubscribe_controller_test.exs	/^defmodule ConstableWeb.UsubscribeControllerTest do$/;"	m
+ViewCase	../test/support/view_case.ex	/^defmodule ConstableWeb.ViewCase do$/;"	m
+ViewCaseHelper	../test/support/view_case_helper.ex	/^defmodule ConstableWeb.ViewCaseHelper do$/;"	m
+WallabyHelper	../test/support/wallaby_helper.ex	/^defmodule ConstableWeb.WallabyHelper do$/;"	m
+__using__	../lib/constable_web.ex	/^  defmacro __using__(which) when is_atom(which) do$/;"	a
+_updateMarkdown	../assets/js/announcement-form.js	/^  _updateMarkdown(e) {$/;"	f
+_updateTitle	../assets/js/announcement-form.js	/^  _updateTitle(e) {$/;"	f
+accept_all_confirm_dialogs	../test/support/wallaby_helper.ex	/^  def accept_all_confirm_dialogs(session) do$/;"	f
+active	../lib/constable/models/user.ex	/^  def active(query \\\\ __MODULE__) do$/;"	f
+add_everyone_interest	../lib/constable_web/controllers/auth_controller.ex	/^  defp add_everyone_interest(user) do$/;"	f
+add_interests	../lib/constable/services/announcement_creator.ex	/^  defp add_interests(announcement, interest_names) do$/;"	f
+add_interests	../lib/constable/services/announcement_interest_associator.ex	/^  def add_interests(announcement, names) do$/;"	f
+add_unsubscribe_vars	../lib/constable_web/emails.ex	/^  defp add_unsubscribe_vars(email, announcement) do$/;"	f
+admin_emails	../lib/constable_web/emails.ex	/^  defp admin_emails do$/;"	f
+admins	../lib/constable_web/emails.ex	/^  defp admins do$/;"	f
+aliases	../mix.exs	/^  defp aliases do$/;"	f
+all_announcements	../lib/constable_web/controllers/announcement_controller.ex	/^  defp all_announcements do$/;"	f
+all_interests	../lib/constable_web/controllers/interest_controller.ex	/^  defp all_interests do$/;"	f
+all_users_ordered_by_name	../lib/constable_web/controllers/api/user_controller.ex	/^  defp all_users_ordered_by_name do$/;"	f
+announcement_email_address	../lib/constable_web/emails.ex	/^  defp announcement_email_address(announcement) do$/;"	f
+announcement_factory	../lib/constable/factory.ex	/^  def announcement_factory do$/;"	f
+announcement_has_interest_named?	../test/services/announcement_creator_test.exs	/^  defp announcement_has_interest_named?(announcement, interest_name) do$/;"	f
+announcement_has_interest_named?	../test/services/announcement_updater_test.exs	/^  defp announcement_has_interest_named?(announcement, interest_name) do$/;"	f
+announcement_id_from_email	../lib/constable_web/controllers/email_reply_controller.ex	/^  defp announcement_id_from_email("announcement-" <> key_and_domain) do$/;"	f
+announcement_interest_factory	../lib/constable/factory.ex	/^  def announcement_interest_factory do$/;"	f
+announcement_message_id	../lib/constable_web/emails.ex	/^  defp announcement_message_id(announcement) do$/;"	f
+announcement_params_factory	../lib/constable/factory.ex	/^  def announcement_params_factory do$/;"	f
+announcement_url_for_footer	../lib/constable_web/views/email_view.ex	/^  def announcement_url_for_footer(announcement, comment) do$/;"	f
+announcement_url_for_footer	../lib/constable_web/views/email_view.ex	/^  def announcement_url_for_footer(announcement, nil) do$/;"	f
+announcements_of_interest	../lib/constable_web/controllers/announcement_controller.ex	/^  defp announcements_of_interest(conn) do$/;"	f
+announcements_since	../lib/constable/services/daily_digest.ex	/^  defp announcements_since(time) do$/;"	f
+announcements_with_user_comments	../lib/constable_web/controllers/announcement_controller.ex	/^  defp announcements_with_user_comments(user_id) do$/;"	f
+api_authenticate	../test/support/conn_case_helper.ex	/^  def api_authenticate(user \\\\ insert(:user)) do$/;"	f
+application	../mix.exs	/^  def application do$/;"	f
+associate_interests_with_announcement	../lib/constable/services/announcement_interest_associator.ex	/^  defp associate_interests_with_announcement(interests, announcement) do$/;"	f
+attachEvents	../assets/js/checkbox-switch.js	/^  const attachEvents = function(el) {$/;"	f
+authenticate	../test/plugs/require_web_login_test.exs	/^  defp authenticate(conn) do$/;"	f
+authorize_url	../lib/constable/services/google_strategy.ex	/^  def authorize_url(client, params) do$/;"	f
+authorize_url!	../lib/constable/services/google_strategy.ex	/^  def authorize_url!(redirect_uri) do$/;"	f
+autocompleteUsers	../assets/js/user-autocomplete.js	/^export function autocompleteUsers(selector, users) {$/;"	f
+base_email	../lib/constable_web/emails.ex	/^  defp base_email do$/;"	f
+bind	../assets/js/comment-form.js	/^  Mousetrap.bind(SAVE_SHORTCUT, function() {$/;"	f
+blank_interest?	../lib/constable/services/announcement_interest_associator.ex	/^  defp blank_interest?(" " <> rest), do: blank_interest?(rest)$/;"	f
+blank_interest?	../lib/constable/services/announcement_interest_associator.ex	/^  defp blank_interest?(""), do: true$/;"	f
+blank_interest?	../lib/constable/services/announcement_interest_associator.ex	/^  defp blank_interest?(_), do: false$/;"	f
+bold_usernames	../lib/constable_web/views/shared_view.ex	/^  defp bold_usernames(users, text) do$/;"	f
+both_parts_contain	../test/emails_test.exs	/^  defp both_parts_contain(email, string) do$/;"	f
+broadcast	../lib/constable/services/comment_creator.ex	/^  defp broadcast(comment) do$/;"	f
+broadcast_html	../lib/constable/services/comment_creator.ex	/^  defp broadcast_html(comment) do$/;"	f
+browser_authenticate	../test/support/conn_case_helper.ex	/^  def browser_authenticate(user \\\\ insert(:user)) do$/;"	f
+browser_callback	../lib/constable_web/controllers/auth_controller.ex	/^  def browser_callback(conn, %{"code" => code}) do$/;"	f
+browser_callback	../lib/constable_web/controllers/auth_controller.ex	/^  def browser_callback(conn, %{"error" => error_message}) do$/;"	f
+call	../lib/constable/plugs/deslugifier.ex	/^  def call(conn, key) do$/;"	f
+call	../lib/constable/plugs/fetch_current_user.ex	/^  def call(conn, _) do$/;"	f
+call	../lib/constable/plugs/require_api_login.ex	/^  def call(conn, _) do$/;"	f
+call	../lib/constable/plugs/require_web_login.ex	/^  def call(conn, _) do$/;"	f
+call	../lib/constable/plugs/set_user_id_from_params.ex	/^  def call(conn, _opts) do$/;"	f
+cast!	../lib/constable/time.ex	/^  def cast!(time) do$/;"	f
+change	../priv/repo/migrations/20150204170307_create_announcements.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20150206153434_create_users.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20150209232905_create_comments.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20150212203030_add_user_to_comments.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20150213213319_add_name_to_users.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20150226150429_add_subscriptions_table.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20150226184100_create_interests.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20150227200438_create_announcements_interests.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20150227210639_create_users_interests.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20150825202821_add_username_to_users.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20150909175723_add_notification_settings_to_users.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20150921193646_add_token_to_subscription.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20151218210106_add_slack_channel_to_interest.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20160610142434_add_active_to_user.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20180413164621_add_slug_to_announcements.exs	/^  def change do$/;"	f
+change	../priv/repo/migrations/20180511201013_make_announcement_slugs_non_nullable.exs	/^  def change do$/;"	f
+changeset	../lib/constable/models/interest.ex	/^  def changeset(interest \\\\ %__MODULE__{}, params) do$/;"	f
+changeset	../lib/constable/models/subscription.ex	/^  def changeset(subscription \\\\ %__MODULE__{}, params) do$/;"	f
+changeset	../lib/constable/models/user_interest.ex	/^  def changeset(user_interest \\\\ %__MODULE__{}, params) do$/;"	f
+channel	../lib/constable_web.ex	/^  def channel do$/;"	f
+class_for	../lib/constable_web/views/announcement_view.ex	/^  def class_for("all", %{params: %{"all" => "true"}}), do: "selected"$/;"	f
+class_for	../lib/constable_web/views/announcement_view.ex	/^  def class_for("your announcements", conn = %{params: %{"user_id" => id}}) do$/;"	f
+class_for	../lib/constable_web/views/announcement_view.ex	/^  def class_for("your interests", %{params: %{"all" => "true"}}), do: nil$/;"	f
+class_for	../lib/constable_web/views/announcement_view.ex	/^  def class_for("your interests", %{params: %{"comment_user_id" => _}}), do: nil$/;"	f
+class_for	../lib/constable_web/views/announcement_view.ex	/^  def class_for("your interests", %{params: %{"user_id" => _}}), do: nil$/;"	f
+class_for	../lib/constable_web/views/announcement_view.ex	/^  def class_for("your interests", _), do: "selected"$/;"	f
+class_for	../lib/constable_web/views/announcement_view.ex	/^  def class_for($/;"	f
+class_for	../lib/constable_web/views/announcement_view.ex	/^  def class_for(_, _), do: nil$/;"	f
+clearLocalStorageOnSubmit	../assets/js/announcement-form.js	/^  clearLocalStorageOnSubmit() {$/;"	f
+clearSavedCommentChanges	../assets/js/comment-form.js	/^function clearSavedCommentChanges() {$/;"	f
+clear_interests	../lib/constable/services/announcement_updater.ex	/^  defp clear_interests(announcement) do$/;"	f
+click_edit	../test/acceptance/user_announcement_test.exs	/^  defp click_edit(session) do$/;"	f
+click_edit_interest	../test/acceptance/user_sets_slack_channel_for_interest_test.exs	/^  defp click_edit_interest(session) do$/;"	f
+click_remove_slack_channel	../test/acceptance/user_sets_slack_channel_for_interest_test.exs	/^  defp click_remove_slack_channel(session) do$/;"	f
+click_submit	../test/acceptance/user_sets_slack_channel_for_interest_test.exs	/^  defp click_submit(session) do$/;"	f
+click_submit_button	../test/acceptance/user_announcement_test.exs	/^  defp click_submit_button(session) do$/;"	f
+client	../lib/constable/services/google_strategy.ex	/^  def client(redirect_uri) do$/;"	f
+comma_separated_interest_names	../lib/constable_web/views/announcement_view.ex	/^  def comma_separated_interest_names(_), do: ""$/;"	f
+comma_separated_interest_names	../lib/constable_web/views/announcement_view.ex	/^  def comma_separated_interest_names(interests) when is_list(interests) do$/;"	f
+comment_factory	../lib/constable/factory.ex	/^  def comment_factory do$/;"	f
+comment_on_announcement_page	../test/controllers/comment_controller_test.exs	/^  defp comment_on_announcement_page(conn, comment) do$/;"	f
+comment_params	../lib/constable_web/controllers/email_reply_controller.ex	/^  defp comment_params($/;"	f
+commenter_names	../lib/constable_web/views/email_view.ex	/^  def commenter_names(users) do$/;"	f
+commenters	../lib/constable_web/views/announcement_list_view.ex	/^  def commenters(announcement) do$/;"	f
+comments_since	../lib/constable/services/daily_digest.ex	/^  defp comments_since(time) do$/;"	f
+compile_assets	../mix.exs	/^  defp compile_assets(_) do$/;"	f
+config_change	../lib/constable/application.ex	/^  def config_change(changed, _new, removed) do$/;"	f
+connect	../lib/constable_web/channels/user_socket.ex	/^  def connect(%{"token" => token}, socket, _connect_info) do$/;"	f
+connect	../lib/constable_web/channels/user_socket.ex	/^  def connect(params, _socket, _connect_info) do$/;"	f
+constructor	../assets/js/announcement-form.js	/^  constructor() {$/;"	f
+content_container	../lib/constable_web/views/layout_view.ex	/^  def content_container(conn, assigns \\\\ [], do: contents) do$/;"	f
+controller	../lib/constable_web.ex	/^  def controller do$/;"	f
+count	../lib/constable/repo.ex	/^  def count(query) do$/;"	f
+create	../assets/js/announcement-form.js	/^        create(name) {$/;"	f
+create	../lib/constable/services/announcement_creator.ex	/^  def create(params, interest_names) do$/;"	f
+create	../lib/constable/services/comment_creator.ex	/^  def create(params) do$/;"	f
+create	../lib/constable_web/controllers/announcement_controller.ex	/^  def create(conn, %{"announcement" => announcement_params}) do$/;"	f
+create	../lib/constable_web/controllers/api/announcement_controller.ex	/^  def create($/;"	f
+create	../lib/constable_web/controllers/api/announcement_controller.ex	/^  def create(conn, _params), do: send_resp(conn, 422, "")$/;"	f
+create	../lib/constable_web/controllers/api/comment_controller.ex	/^  def create(conn, %{"comment" => params}) do$/;"	f
+create	../lib/constable_web/controllers/api/search_controller.ex	/^  def create(conn, params = %{"query" => search_terms}) do$/;"	f
+create	../lib/constable_web/controllers/api/subscription_controller.ex	/^  def create(conn, %{"subscription" => params}) do$/;"	f
+create	../lib/constable_web/controllers/api/user_controller.ex	/^  def create(conn, %{"user" => user_params}) do$/;"	f
+create	../lib/constable_web/controllers/api/user_interest_controller.ex	/^  def create(conn, %{"user_interest" => params}) do$/;"	f
+create	../lib/constable_web/controllers/comment_controller.ex	/^  def create(conn, %{"announcement_id" => announcement_id, "comment" => comment_params}) do$/;"	f
+create	../lib/constable_web/controllers/email_forward_controller.ex	/^  def create(conn, %{"mandrill_events" => messages}) do$/;"	f
+create	../lib/constable_web/controllers/email_reply_controller.ex	/^  def create(conn, %{"mandrill_events" => messages}) do$/;"	f
+create	../lib/constable_web/controllers/subscriptions_controller.ex	/^  def create(conn, %{"announcement_id" => announcement_id}) do$/;"	f
+create	../lib/constable_web/controllers/user_interest_controller.ex	/^  def create(conn, %{"interest_id_or_name" => interest_name}) do$/;"	f
+create_and_broadcast	../lib/constable/services/announcement_interest_associator.ex	/^  defp create_and_broadcast(changeset) do$/;"	f
+create_announcement_last_discussed	../test/models/comment_test.exs	/^  defp create_announcement_last_discussed(time_ago) do$/;"	f
+create_changeset	../lib/constable/models/announcement.ex	/^  def create_changeset(announcement, params) do$/;"	f
+create_changeset	../lib/constable/models/comment.ex	/^  def create_changeset(model \\\\ %__MODULE__{}, params) do$/;"	f
+create_changeset	../lib/constable/models/comment.ex	/^  def create_changeset(model, params, last_discussed_at) do$/;"	f
+create_changeset	../lib/constable/models/user.ex	/^  def create_changeset(user \\\\ %__MODULE__{}, params) do$/;"	f
+create_comments	../lib/constable_web/controllers/email_reply_controller.ex	/^  defp create_comments(messages) do$/;"	f
+create_email_forward_webhook	../test/controllers/email_forward_controller_test.exs	/^  defp create_email_forward_webhook(message_attributes) do$/;"	f
+create_email_reply_webhook	../test/controllers/email_reply_controller_test.exs	/^  defp create_email_reply_webhook(message_attributes) do$/;"	f
+create_everyone_interest	../test/controllers/auth_controller_test.exs	/^  defp create_everyone_interest do$/;"	f
+current_user	../lib/constable_web/controller_helper.ex	/^  def current_user(conn) do$/;"	f
+current_user	../lib/constable_web/views/shared_view.ex	/^  def current_user(conn) do$/;"	f
+current_user_same_as_announcements_user?	../lib/constable_web/views/announcement_view.ex	/^  defp current_user_same_as_announcements_user?(conn, announcements_user_id) do$/;"	f
+daily_digest	../lib/constable_web/emails.ex	/^  def daily_digest(interests, announcements, comments, recipients) do$/;"	f
+daily_digest_email	../lib/constable/services/daily_digest.ex	/^  defp daily_digest_email(time, users) do$/;"	f
+days_ago	../lib/constable/time.ex	/^  def days_ago(count) do$/;"	f
+delete	../lib/constable_web/controllers/announcement_controller.ex	/^  def delete(conn, %{"id" => id}) do$/;"	f
+delete	../lib/constable_web/controllers/api/announcement_controller.ex	/^  def delete(conn, %{"id" => id}) do$/;"	f
+delete	../lib/constable_web/controllers/api/subscription_controller.ex	/^  def delete(conn, %{"id" => id}) do$/;"	f
+delete	../lib/constable_web/controllers/api/user_interest_controller.ex	/^  def delete(conn, %{"id" => id}) do$/;"	f
+delete	../lib/constable_web/controllers/session_controller.ex	/^  def delete(conn, _params) do$/;"	f
+delete	../lib/constable_web/controllers/slack_channel_controller.ex	/^  def delete(conn, %{"interest_id_or_name" => name}) do$/;"	f
+delete	../lib/constable_web/controllers/subscriptions_controller.ex	/^  def delete(conn, %{"announcement_id" => announcement_id}) do$/;"	f
+delete	../lib/constable_web/controllers/user_interest_controller.ex	/^  def delete(conn, %{"interest_id_or_name" => interest_name}) do$/;"	f
+deps	../mix.exs	/^  defp deps do$/;"	f
+deslugify	../lib/constable/plugs/deslugifier.ex	/^  defp deslugify(slugified_id) do$/;"	f
+dialyzer_settings	../mix.exs	/^  defp dialyzer_settings do$/;"	f
+discussed_announcements	../lib/constable_web/views/email_view.ex	/^  def discussed_announcements(comments) do$/;"	f
+done	../assets/js/remote-append.js	/^  }).done(function(data) {$/;"	f
+down	../priv/repo/migrations/20150212191157_add_user_to_announcements.exs	/^  def down do$/;"	f
+down	../priv/repo/migrations/20150826133822_add_null_constraint_to_username.exs	/^  def down do$/;"	f
+down	../priv/repo/migrations/20150918165253_set_autosubscribe_default_to_true.exs	/^  def down do$/;"	f
+down	../priv/repo/migrations/20150921194253_generate_subscription_tokens.exs	/^  def down do$/;"	f
+down	../priv/repo/migrations/20160422175132_add_last_discussed_to_announcements.exs	/^  def down do$/;"	f
+down	../priv/repo/migrations/20160624194052_add_not_null_constraint_to_required_foreign_keys.exs	/^  def down do$/;"	f
+each	../assets/js/checkbox-switch.js	/^  $('.checkbox-switch > input[type=checkbox]').each(function(_index) {$/;"	f
+each	../assets/js/syntax-highlighting.js	/^  $('pre code').each(function(_index, block) {$/;"	f
+edit	../lib/constable_web/controllers/announcement_controller.ex	/^  def edit(conn, %{"id" => id}) do$/;"	f
+edit	../lib/constable_web/controllers/comment_controller.ex	/^  def edit(conn, %{"announcement_id" => announcement_id, "id" => comment_id}) do$/;"	f
+edit	../lib/constable_web/controllers/slack_channel_controller.ex	/^  def edit(conn, %{"interest_id_or_name" => name}) do$/;"	f
+elixirc_paths	../mix.exs	/^  defp elixirc_paths(:test), do: ["lib", "test\/support"]$/;"	f
+elixirc_paths	../mix.exs	/^  defp elixirc_paths(_), do: ["lib"]$/;"	f
+email_and_subscribe_users	../lib/constable/services/announcement_creator.ex	/^  defp email_and_subscribe_users(announcement) do$/;"	f
+email_body	../lib/constable_web/controllers/email_preview_controller.ex	/^  defp email_body(email_name) do$/;"	f
+email_contains_interest_link	../test/mailers/announcement_mailer_test.exs	/^  defp email_contains_interest_link(email, interest) do$/;"	f
+email_for	../lib/constable_web/controllers/email_preview_controller.ex	/^  defp email_for(:daily_digest) do$/;"	f
+email_for	../lib/constable_web/controllers/email_preview_controller.ex	/^  defp email_for(:new_announcement) do$/;"	f
+email_for	../lib/constable_web/controllers/email_preview_controller.ex	/^  defp email_for(:new_announcement_mention) do$/;"	f
+email_for	../lib/constable_web/controllers/email_preview_controller.ex	/^  defp email_for(:new_comment) do$/;"	f
+email_for	../lib/constable_web/controllers/email_preview_controller.ex	/^  defp email_for(:new_comment_mention) do$/;"	f
+email_for	../lib/constable_web/controllers/email_preview_controller.ex	/^  defp email_for(email_name) do$/;"	f
+email_mentioned_users	../lib/constable/services/announcement_creator.ex	/^  def email_mentioned_users(announcement, users) do$/;"	f
+email_mentioned_users	../lib/constable/services/comment_creator.ex	/^  defp email_mentioned_users(comment) do$/;"	f
+email_reply_event_factory	../lib/constable/factory.ex	/^  def email_reply_event_factory do$/;"	f
+email_reply_message_factory	../lib/constable/factory.ex	/^  def email_reply_message_factory do$/;"	f
+email_reply_webhook_factory	../lib/constable/factory.ex	/^  def email_reply_webhook_factory do$/;"	f
+email_subscribers	../lib/constable/services/comment_creator.ex	/^  defp email_subscribers(comment, mentioned_users) do$/;"	f
+email_users	../lib/constable/services/announcement_creator.ex	/^  defp email_users(announcement, users) do$/;"	f
+encode	../lib/constable/models/serializers/announcement.ex	/^  def encode(announcement, _options) do$/;"	f
+encode	../lib/constable/models/serializers/comment.ex	/^  def encode(comment, _options) do$/;"	f
+encode	../lib/constable/models/serializers/interest.ex	/^  def encode(interest, _options) do$/;"	f
+encode	../lib/constable/models/serializers/subscription.ex	/^  def encode(subscription, _options) do$/;"	f
+encode	../lib/constable/models/serializers/user.ex	/^  def encode(user, _options) do$/;"	f
+encode	../lib/constable/models/serializers/user_interest.ex	/^  def encode(user_interest, _options) do$/;"	f
+ensure_name_is_set	../lib/constable/models/user.ex	/^  defp ensure_name_is_set(changeset) do$/;"	f
+entry	../assets/webpack.config.js	/^  entry: {$/;"	o
+error_tag	../lib/constable_web/views/error_helpers.ex	/^  def error_tag(form, field) do$/;"	f
+errors_on	../test/support/model_case.ex	/^  def errors_on(model, data) do$/;"	f
+everyone_interest	../lib/constable_web/controllers/auth_controller.ex	/^  defp everyone_interest do$/;"	f
+extract_interest_names	../lib/constable_web/controllers/announcement_controller.ex	/^  defp extract_interest_names(announcement_params) do$/;"	f
+fetch_json_ids	../test/support/conn_case_helper.ex	/^  def fetch_json_ids(key, conn, status \\\\ 200) do$/;"	f
+fetch_slug	../lib/constable/services/hub_profile_provider.ex	/^  defp fetch_slug(user) do$/;"	f
+fetch_token	../lib/constable/plugs/require_api_login.ex	/^  def fetch_token(conn) do$/;"	f
+fill_in_interests	../test/acceptance/user_announcement_test.exs	/^  defp fill_in_interests(session, interests) do$/;"	f
+filter_author	../lib/constable/services/announcement_creator.ex	/^  defp filter_author(author_id, users) do$/;"	f
+find_interest	../lib/constable_web/controllers/slack_channel_controller.ex	/^  defp find_interest(interest_name) do$/;"	f
+find_interest	../lib/constable_web/controllers/user_interest_controller.ex	/^  defp find_interest(interest_name) do$/;"	f
+find_interested_users	../lib/constable/services/announcement_creator.ex	/^  defp find_interested_users(announcement) do$/;"	f
+find_mentioned_users	../lib/constable/services/announcement_creator.ex	/^  def find_mentioned_users(announcement) do$/;"	f
+find_or_insert_user	../lib/constable_web/controllers/auth_controller.ex	/^  defp find_or_insert_user(email, name) do$/;"	f
+find_subscribed_users	../lib/constable/services/comment_creator.ex	/^  defp find_subscribed_users(announcement_id) do$/;"	f
+find_user	../lib/constable/plugs/fetch_current_user.ex	/^  def find_user(conn) do$/;"	f
+find_user	../lib/constable/plugs/require_api_login.ex	/^  def find_user(conn) do$/;"	f
+find_user_from_token	../lib/constable/plugs/require_api_login.ex	/^  def find_user_from_token(nil), do: nil$/;"	f
+find_user_from_token	../lib/constable/plugs/require_api_login.ex	/^  def find_user_from_token(token) do$/;"	f
+find_users	../lib/constable/services/mention_finder.ex	/^  def find_users(text) do$/;"	f
+for_announcement	../lib/constable/models/subscription.ex	/^  def for_announcement(announcement_id) do$/;"	f
+for_user	../lib/constable/models/announcement.ex	/^  def for_user(query \\\\ __MODULE__, user_id) do$/;"	f
+format_email_address	../lib/constable/models/user.ex	/^    def format_email_address(user, _opts) do$/;"	f
+format_json	../test/support/conn_case_helper.ex	/^  defp format_json(data) do$/;"	f
+format_user_json	../lib/constable_web/views/announcement_view.ex	/^  defp format_user_json(user) do$/;"	f
+forward_emails_to_admins	../lib/constable_web/controllers/email_forward_controller.ex	/^  defp forward_emails_to_admins(forwarded_emails) do$/;"	f
+forwarded_body	../lib/constable_web/emails.ex	/^  defp forwarded_body(text_body, from_address, to) do$/;"	f
+forwarded_email	../lib/constable_web/emails.ex	/^  def forwarded_email(%{"email" => to, "from_email" => from, "text" => email_body}) do$/;"	f
+from_author	../lib/constable_web/emails.ex	/^  defp from_author(email, user) do$/;"	f
+from_email_address	../lib/constable_web/emails.ex	/^  defp from_email_address do$/;"	f
+function	../assets/js/checkbox-switch.js	/^  const attachEvents = function(el) {$/;"	f
+function	../assets/js/checkbox-switch.js	/^  const setRole = function(el) {$/;"	f
+function	../assets/js/checkbox-switch.js	/^  let keyEvents = function(e) {$/;"	f
+function	../assets/js/checkbox-switch.js	/^  this.init = function(elm) {$/;"	f
+function	../assets/js/checkbox-switch.js	/^const A11YswitchCheck = function() {$/;"	f
+function	../assets/js/comment-form.js	/^const initializeForm = function(usersForAutoComplete) {$/;"	f
+function	../assets/js/syntax-highlighting.js	/^const highlightCodeBlocks = function() {$/;"	f
+function	../assets/js/textarea-image-uploader.js	/^const refreshMarkdownPreview = function(inputSelector) {$/;"	f
+generate_slug	../lib/constable/models/announcement.ex	/^  defp generate_slug(changeset) do$/;"	f
+generate_token	../lib/constable/models/subscription.ex	/^  defp generate_token(changeset) do$/;"	f
+generate_token	../lib/constable/models/user.ex	/^  defp generate_token(changeset) do$/;"	f
+generate_username	../lib/constable/models/user.ex	/^  defp generate_username(changeset) do$/;"	f
+generic_address	../lib/constable_web/emails.ex	/^  defp generic_address do$/;"	f
+get	../lib/constable/env.ex	/^  def get(key) do$/;"	f
+get!	../test/controllers/auth_controller_test.exs	/^    def get!(_token, _path) do$/;"	f
+getCommentFromLocalStorage	../assets/js/comment-form.js	/^function getCommentFromLocalStorage() {$/;"	f
+get_interest_by_id_or_name	../lib/constable_web/controllers/interest_controller.ex	/^  defp get_interest_by_id_or_name(param) do$/;"	f
+get_or_create_interests	../lib/constable/services/announcement_interest_associator.ex	/^  defp get_or_create_interests(names) do$/;"	f
+get_token	../lib/constable/services/google_strategy.ex	/^  def get_token(client, params, headers) do$/;"	f
+get_token!	../lib/constable/services/fake_google_strategy.ex	/^  def get_token!(_redirect_uri, _params), do: "fake_token"$/;"	f
+get_token!	../lib/constable/services/google_strategy.ex	/^  def get_token!(redirect_uri, params \\\\ [], headers \\\\ [], options \\\\ []) do$/;"	f
+get_token!	../test/controllers/auth_controller_test.exs	/^    def get_token!(_conn, _code, _token_params) do$/;"	f
+get_tokeninfo!	../lib/constable/services/google_strategy.ex	/^  def get_tokeninfo!(redirect_uri, id_token) do$/;"	f
+get_tokeninfo!	../lib/constable_web/controllers/auth_controller.ex	/^  defp get_tokeninfo!(id_token) do$/;"	f
+get_tokeninfo!	../test/controllers/auth_controller_test.exs	/^    def get_tokeninfo!(_redirect_uri, _id_token) do$/;"	f
+get_userinfo	../lib/constable_web/controllers/auth_controller.ex	/^  defp get_userinfo(token) do$/;"	f
+google_auth_uri	../test/controllers/auth_controller_test.exs	/^  defp google_auth_uri(params) do$/;"	f
+google_strategy	../lib/constable_web/controllers/auth_controller.ex	/^  defp google_strategy do$/;"	f
+handle_out	../lib/constable_web/channels/live_html_channel.ex	/^  def handle_out("new-comment", %{comment: comment}, socket) do$/;"	f
+has_announcement_body?	../test/acceptance/user_announcement_test.exs	/^  defp has_announcement_body?(session, text) do$/;"	f
+has_announcement_interest?	../test/acceptance/user_announcement_test.exs	/^  defp has_announcement_interest?(session, text) do$/;"	f
+has_announcement_text?	../test/acceptance/user_searches_announcements_test.exs	/^  defp has_announcement_text?(session, announcment_title) do$/;"	f
+has_announcement_title?	../test/acceptance/user_announcement_test.exs	/^  defp has_announcement_title?(session, text) do$/;"	f
+has_announcement_title?	../test/acceptance/user_unsubscribes_test.exs	/^  defp has_announcement_title?(session, text) do$/;"	f
+has_comment_text?	../test/acceptance/new_comment_test.exs	/^  defp has_comment_text?(session, comment_text) do$/;"	f
+has_comments_placeholder?	../test/acceptance/new_comment_test.exs	/^  defp has_comments_placeholder?(session) do$/;"	f
+has_comments_placeholder?	../test/acceptance/user_announcement_test.exs	/^  defp has_comments_placeholder?(session) do$/;"	f
+has_form_error_message?	../test/acceptance/user_announcement_test.exs	/^  defp has_form_error_message?(session, message) do$/;"	f
+has_login_button?	../test/acceptance/user_unsubscribes_test.exs	/^  defp has_login_button?(session) do$/;"	f
+has_no_slack_channel_set?	../test/acceptance/user_sets_slack_channel_for_interest_test.exs	/^  defp has_no_slack_channel_set?(session) do$/;"	f
+has_recipient_preview?	../test/acceptance/user_announcement_test.exs	/^  defp has_recipient_preview?(session, user_names) do$/;"	f
+has_slack_channel_set?	../test/acceptance/user_sets_slack_channel_for_interest_test.exs	/^  defp has_slack_channel_set?(session, channel_name) do$/;"	f
+has_unsubscribed_flash_message?	../test/acceptance/user_unsubscribes_test.exs	/^  defp has_unsubscribed_flash_message?(session) do$/;"	f
+highlightCodeBlocks	../assets/js/syntax-highlighting.js	/^const highlightCodeBlocks = function() {$/;"	f
+highlightSyntax	../assets/js/syntax-highlighting.js	/^export function highlightSyntax(container) {$/;"	f
+id	../lib/constable_web/channels/user_socket.ex	/^  def id(_socket), do: nil$/;"	f
+ids_as_keys	../lib/constable/models/serializers/serializers.ex	/^  def ids_as_keys(objects) do$/;"	f
+ids_from	../test/support/view_case_helper.ex	/^  def ids_from(enumerable) do$/;"	f
+if	../assets/js/announcement-form.js	/^          if (!this._isEditing) {$/;"	f
+if	../assets/js/announcement-form.js	/^    if (!this._isEditing) {$/;"	f
+if	../assets/js/announcement-form.js	/^    if (interests.length !== 0) {$/;"	f
+if	../assets/js/announcement-form.js	/^    if (value === '') {$/;"	f
+if	../assets/js/comment-form.js	/^  if (value.length) {$/;"	f
+if	../assets/js/user-autocomplete.js	/^      if (term === '') {$/;"	f
+image_url	../lib/constable/services/fake_profile_provider.ex	/^  def image_url(_user) do$/;"	f
+inbound_domain	../lib/constable_web/emails.ex	/^  defp inbound_domain do$/;"	f
+index	../lib/constable_web/controllers/announcement_controller.ex	/^  def index(conn, %{"all" => "true"} = params) do$/;"	f
+index	../lib/constable_web/controllers/announcement_controller.ex	/^  def index(conn, %{"comment_user_id" => user_id} = params) do$/;"	f
+index	../lib/constable_web/controllers/announcement_controller.ex	/^  def index(conn, %{"interest" => interest, "page" => page}) do$/;"	f
+index	../lib/constable_web/controllers/announcement_controller.ex	/^  def index(conn, %{"user_id" => user_id} = params) do$/;"	f
+index	../lib/constable_web/controllers/announcement_controller.ex	/^  def index(conn, params) do$/;"	f
+index	../lib/constable_web/controllers/api/announcement_controller.ex	/^  def index(conn, _params) do$/;"	f
+index	../lib/constable_web/controllers/api/interest_controller.ex	/^  def index(conn, _params) do$/;"	f
+index	../lib/constable_web/controllers/api/subscription_controller.ex	/^  def index(conn, _params) do$/;"	f
+index	../lib/constable_web/controllers/api/user_controller.ex	/^  def index(conn, _params) do$/;"	f
+index	../lib/constable_web/controllers/api/user_interest_controller.ex	/^  def index(conn, _params) do$/;"	f
+index	../lib/constable_web/controllers/auth_controller.ex	/^  def index(conn, %{"browser" => "true"}) do$/;"	f
+index	../lib/constable_web/controllers/auth_controller.ex	/^  def index(conn, %{"redirect_uri" => redirect_uri}) do$/;"	f
+index	../lib/constable_web/controllers/home_controller.ex	/^  def index(conn, _params) do$/;"	f
+index	../lib/constable_web/controllers/interest_controller.ex	/^  def index(conn, _params) do$/;"	f
+index	../lib/constable_web/controllers/user_activation_controller.ex	/^  def index(conn, _params) do$/;"	f
+init	../assets/js/checkbox-switch.js	/^  this.init = function(elm) {$/;"	f
+init	../lib/constable/plugs/deslugifier.ex	/^  def init(opts) do$/;"	f
+init	../lib/constable/plugs/fetch_current_user.ex	/^  def init(opts), do: opts$/;"	f
+init	../lib/constable/plugs/require_api_login.ex	/^  def init(default), do: default$/;"	f
+init	../lib/constable/plugs/require_web_login.ex	/^  def init(opts), do: opts$/;"	f
+init	../lib/constable/plugs/set_user_id_from_params.ex	/^  def init(opts), do: opts$/;"	f
+init	../lib/constable_web/endpoint.ex	/^  def init(_key, config) do$/;"	f
+initializeForm	../assets/js/comment-form.js	/^const initializeForm = function(usersForAutoComplete) {$/;"	f
+insert_announcement_with_interests	../lib/constable_web/controllers/email_preview_controller.ex	/^  defp insert_announcement_with_interests do$/;"	f
+insert_announcement_with_interests	../test/emails_test.exs	/^  defp insert_announcement_with_interests do$/;"	f
+insert_comment_on_announcement	../test/models/comment_test.exs	/^  defp insert_comment_on_announcement(announcement, last_discussed_at) do$/;"	f
+insert_new_user	../lib/constable_web/controllers/auth_controller.ex	/^  defp insert_new_user(email, name) do$/;"	f
+insert_subscription	../lib/constable/services/announcement_creator.ex	/^  defp insert_subscription(params) do$/;"	f
+interest_count_for	../lib/constable_web/views/announcement_view.ex	/^  def interest_count_for(user) do$/;"	f
+interest_count_for	../lib/constable_web/views/interest_view.ex	/^  def interest_count_for(user) do$/;"	f
+interest_factory	../lib/constable/factory.ex	/^  def interest_factory do$/;"	f
+interest_links	../lib/constable_web/views/email_view.ex	/^  def interest_links(announcement) do$/;"	f
+interest_links	../test/emails_test.exs	/^  def interest_links(announcement) do$/;"	f
+interest_names	../lib/constable_web/views/email_view.ex	/^  def interest_names(announcement) do$/;"	f
+interest_names	../test/emails_test.exs	/^  defp interest_names(announcement) do$/;"	f
+interested_in?	../lib/constable/models/user.ex	/^  def interested_in?(user, interest) do$/;"	f
+interested_user_names	../lib/constable_web/controllers/recipients_preview_controller.ex	/^  defp interested_user_names(interest_names) do$/;"	f
+interests_since	../lib/constable/services/daily_digest.ex	/^  defp interests_since(time) do$/;"	f
+is_blank?	../lib/constable/models/user.ex	/^  defp is_blank?(nil), do: true$/;"	f
+is_blank?	../lib/constable/models/user.ex	/^  defp is_blank?(string) when is_binary(string) do$/;"	f
+javascript_callback	../lib/constable_web/controllers/auth_controller.ex	/^  def javascript_callback(conn, %{"code" => code}) do$/;"	f
+javascript_callback	../lib/constable_web/controllers/auth_controller.ex	/^  def javascript_callback(conn, %{"error" => error_message}) do$/;"	f
+join	../lib/constable_web/channels/live_html_channel.ex	/^  def join(_topic, _params, socket) do$/;"	f
+join	../lib/constable_web/channels/update_channel.ex	/^  def join(_topic, _params, socket) do$/;"	f
+json_for	../test/controllers/api/search_controller_test.exs	/^  defp json_for(announcements) do$/;"	f
+json_interests	../lib/constable_web/views/announcement_view.ex	/^  def json_interests(interests) do$/;"	f
+keyEvents	../assets/js/checkbox-switch.js	/^  let keyEvents = function(e) {$/;"	f
+last_discussed_first	../lib/constable/models/announcement.ex	/^  def last_discussed_first(query \\\\ __MODULE__) do$/;"	f
+light_gray	../lib/constable_web/views/email_view.ex	/^  def light_gray do$/;"	f
+logout_user	../lib/constable_web/controllers/session_controller.ex	/^  defp logout_user(conn) do$/;"	f
+make_link	../lib/constable_web/views/email_view.ex	/^  defp make_link(interest) do$/;"	f
+make_link	../test/emails_test.exs	/^  defp make_link(interest) do$/;"	f
+markdown_with_users	../lib/constable_web/views/shared_view.ex	/^  def markdown_with_users(markdown) do$/;"	f
+markedWithSyntax	../assets/js/syntax-highlighting.js	/^export function markedWithSyntax(value) {$/;"	f
+matching_announcements	../lib/constable_web/controllers/search_controller.ex	/^  defp matching_announcements(_params = %{}) do$/;"	f
+matching_announcements	../lib/constable_web/controllers/search_controller.ex	/^  defp matching_announcements(params = %{"query" => search_terms}) do$/;"	f
+maybe_add_redirect_uri_state	../lib/constable/services/google_strategy.ex	/^  defp maybe_add_redirect_uri_state(client, original_redirect_uri) do$/;"	f
+maybe_store_request_path	../lib/constable/plugs/require_web_login.ex	/^  defp maybe_store_request_path(conn) do$/;"	f
+mobile_callback	../lib/constable_web/controllers/auth_controller.ex	/^  def mobile_callback(conn, %{"idToken" => id_token}) do$/;"	f
+mock_image_url_query_result	../test/services/hub_profile_test.exs	/^  defp mock_image_url_query_result(mock_image_url) do$/;"	f
+mock_image_url_query_string	../test/services/hub_profile_test.exs	/^  defp mock_image_url_query_string(email) do$/;"	f
+mock_slug_query_result	../test/services/hub_profile_test.exs	/^  defp mock_slug_query_result(mock_slug) do$/;"	f
+mock_slug_query_string	../test/services/hub_profile_test.exs	/^  defp mock_slug_query_string(email) do$/;"	f
+model	../lib/constable_web.ex	/^  def model do$/;"	f
+module	../assets/webpack.config.js	/^  module: {$/;"	o
+new	../lib/constable_web/controllers/announcement_controller.ex	/^  def new(conn, _params) do$/;"	f
+new	../lib/constable_web/controllers/search_controller.ex	/^  def new(conn, _params) do$/;"	f
+new	../lib/constable_web/controllers/session_controller.ex	/^  def new(conn, _params) do$/;"	f
+new_announcement	../lib/constable/services/slack_hook.ex	/^  def new_announcement(announcement) do$/;"	f
+new_announcement	../lib/constable_web/emails.ex	/^  def new_announcement(announcement, recipients) do$/;"	f
+new_announcement_mention	../lib/constable_web/emails.ex	/^  def new_announcement_mention(announcement, recipients) do$/;"	f
+new_comment	../lib/constable_web/emails.ex	/^  def new_comment(comment, recipients, mentioner \\\\ nil) do$/;"	f
+new_comment_mention	../lib/constable_web/emails.ex	/^  def new_comment_mention(comment, recipients) do$/;"	f
+new_comments	../lib/constable_web/views/email_view.ex	/^  def new_comments(comments, announcement) do$/;"	f
+new_items_since?	../lib/constable/services/daily_digest.ex	/^  defp new_items_since?(time) do$/;"	f
+newest_comments_first	../lib/constable/models/announcement.ex	/^  defp newest_comments_first do$/;"	f
+not_redirected?	../test/plugs/require_web_login_test.exs	/^  defp not_redirected?(conn) do$/;"	f
+not_subscribed_to_interest?	../test/acceptance/user_manages_interests_test.exs	/^  defp not_subscribed_to_interest?(session) do$/;"	f
+notification_settings_link	../lib/constable_web/views/email_view.ex	/^  def notification_settings_link do$/;"	f
+now	../lib/constable/time.ex	/^  def now do$/;"	f
+oauth_redirect_override	../lib/constable/services/oauth_redirect_strategy.ex	/^  defp oauth_redirect_override do$/;"	f
+oauth_scopes	../lib/constable/services/google_strategy.ex	/^  def oauth_scopes, do: @oauth_scopes$/;"	f
+on	../assets/js/announcement-form-mobile.js	/^  markdownHeader.on('click', function() {$/;"	f
+on	../assets/js/announcement-form-mobile.js	/^  previewHeader.on('click', function() {$/;"	f
+on	../assets/js/announcement-form.js	/^      $('[data-role=announcement-form]').on('submit', function() {$/;"	f
+on	../assets/js/comment-form.js	/^  $('.comment-form').on('submit', function submitForm(event) {$/;"	f
+on	../assets/js/remote-append.js	/^$(document).on('click', '.remote-append', function(e) {$/;"	f
+onInitialize	../assets/js/announcement-form.js	/^        onInitialize() {$/;"	f
+on_first_page?	../lib/constable_web/views/shared_view.ex	/^  def on_first_page?(page) do$/;"	f
+on_last_page?	../lib/constable_web/views/shared_view.ex	/^  def on_last_page?(page) do$/;"	f
+optimization	../assets/webpack.config.js	/^  optimization: {$/;"	o
+options	../assets/webpack.config.js	/^            options: {$/;"	o
+ordered_by_name	../lib/constable/models/interest.ex	/^  def ordered_by_name(query \\\\ __MODULE__) do$/;"	f
+ordered_by_name	../lib/constable/models/user.ex	/^  def ordered_by_name(query \\\\ __MODULE__) do$/;"	f
+outbound_domain	../lib/constable_web/emails.ex	/^  defp outbound_domain do$/;"	f
+output	../assets/webpack.config.js	/^  output: {$/;"	o
+page_title	../lib/constable_web/controller_helper.ex	/^  def page_title(conn, title) do$/;"	f
+params	../assets/js/socket.js	/^  params: { token: window.userToken },$/;"	o
+person_image_url_by_email_query	../lib/constable/services/hub_profile_provider.ex	/^  defp person_image_url_by_email_query(email) do$/;"	f
+person_slug_by_email_query	../lib/constable/services/hub_profile_provider.ex	/^  defp person_slug_by_email_query(email) do$/;"	f
+pluck	../lib/enum_helper.ex	/^  def pluck(enumerable, property) do$/;"	f
+post	../lib/constable/services/slack_hook.ex	/^  defp post(payload) do$/;"	f
+posted_by_html	../test/emails_test.exs	/^  defp posted_by_html(username, announcement) do$/;"	f
+posted_by_text	../test/emails_test.exs	/^  defp posted_by_text(username, announcement) do$/;"	f
+preload_interests	../lib/constable_web/controllers/announcement_controller.ex	/^  defp preload_interests(user) do$/;"	f
+preload_interests	../lib/constable_web/controllers/interest_controller.ex	/^  defp preload_interests(user) do$/;"	f
+prepare_for_tsquery	../lib/constable/models/announcement.ex	/^  defp prepare_for_tsquery(search_term) do$/;"	f
+profile_image_url	../lib/constable_web/views/shared_view.ex	/^  def profile_image_url(user) do$/;"	f
+profile_provider	../lib/constable_web.ex	/^      def profile_provider do$/;"	f
+profile_provider	../lib/constable_web/views/shared_view.ex	/^  def profile_provider do$/;"	f
+profile_url	../lib/constable/services/fake_profile_provider.ex	/^  def profile_url(_user) do$/;"	f
+profile_url	../lib/constable_web/views/shared_view.ex	/^  def profile_url(user) do$/;"	f
+project	../mix.exs	/^  def project do$/;"	f
+put_reply_headers	../lib/constable_web/emails.ex	/^  defp put_reply_headers(email, announcement) do$/;"	f
+put_session_params_in_session	../test/support/conn_case_helper.ex	/^  defp put_session_params_in_session(conn, session_params) do$/;"	f
+reactivate	../lib/constable/models/user.ex	/^  def reactivate(email) when is_binary(email) do$/;"	f
+ready	../assets/js/checkbox-switch.js	/^$(document).ready(function() {$/;"	f
+receive	../assets/js/comment-form.js	/^  .receive('error', function(resp) {$/;"	f
+receive	../assets/js/comment-form.js	/^  .receive('ok', function(resp) {$/;"	f
+red	../lib/constable_web/views/email_view.ex	/^  def red do$/;"	f
+redirect_after_success_uri	../lib/constable_web/controllers/auth_controller.ex	/^  defp redirect_after_success_uri(conn, token) do$/;"	f
+redirect_to_comment_on_announcement_page	../lib/constable_web/controllers/comment_controller.ex	/^  defp redirect_to_comment_on_announcement_page(conn, announcement, comment) do$/;"	f
+redirect_to_login	../lib/constable/plugs/require_web_login.ex	/^  defp redirect_to_login(conn) do$/;"	f
+redirect_to_original_path_or_announcement_index	../lib/constable_web/controllers/home_controller.ex	/^  defp redirect_to_original_path_or_announcement_index(conn) do$/;"	f
+redirect_uri	../lib/constable/services/oauth_redirect_strategy.ex	/^  def redirect_uri(original_redirect_uri) do$/;"	f
+redirect_uri	../test/controllers/auth_controller_test.exs	/^    def redirect_uri(_) do$/;"	f
+redirect_uri	../test/controllers/auth_controller_test.exs	/^    def redirect_uri(original_redirect_uri) do$/;"	f
+refreshMarkdownPreview	../assets/js/textarea-image-uploader.js	/^const refreshMarkdownPreview = function(inputSelector) {$/;"	f
+rel_from_now	../lib/constable_web/views/shared_view.ex	/^  defp rel_from_now({0, {0, 0, sec}}) when sec < 30,$/;"	f
+rel_from_now	../lib/constable_web/views/shared_view.ex	/^  defp rel_from_now({0, {0, min, _}}) when min < 2,$/;"	f
+rel_from_now	../lib/constable_web/views/shared_view.ex	/^  defp rel_from_now({0, {0, min, _}}),$/;"	f
+rel_from_now	../lib/constable_web/views/shared_view.ex	/^  defp rel_from_now({0, {1, _, _}}),$/;"	f
+rel_from_now	../lib/constable_web/views/shared_view.ex	/^  defp rel_from_now({0, {hour, _, _}}) when hour < 24,$/;"	f
+rel_from_now	../lib/constable_web/views/shared_view.ex	/^  defp rel_from_now({1, {_, _, _}}),$/;"	f
+rel_from_now	../lib/constable_web/views/shared_view.ex	/^  defp rel_from_now({day, {_, _, _}}) when day < 0,$/;"	f
+rel_from_now	../lib/constable_web/views/shared_view.ex	/^  defp rel_from_now({day, {_, _, _}}),$/;"	f
+relative_timestamp	../lib/constable_web/views/shared_view.ex	/^  def relative_timestamp(datetime) do$/;"	f
+remove_original_email	../lib/constable/services/email_reply_parser.ex	/^  def remove_original_email(email) do$/;"	f
+remove_quoted_email	../lib/constable/services/email_reply_parser.ex	/^  defp remove_quoted_email(body) do$/;"	f
+remove_trailing_newlines	../lib/constable/services/email_reply_parser.ex	/^  defp remove_trailing_newlines(body) do$/;"	f
+render	../lib/constable_web/views/api/announcement_view.ex	/^  def render("announcement.json", %{announcement: announcement}) do$/;"	f
+render	../lib/constable_web/views/api/announcement_view.ex	/^  def render("index.json", %{announcements: announcements}) do$/;"	f
+render	../lib/constable_web/views/api/announcement_view.ex	/^  def render("show.json", %{announcement: announcement}) do$/;"	f
+render	../lib/constable_web/views/api/comment_view.ex	/^  def render("comment.json", %{comment: comment}) do$/;"	f
+render	../lib/constable_web/views/api/comment_view.ex	/^  def render("index.json", %{comments: comments}) do$/;"	f
+render	../lib/constable_web/views/api/comment_view.ex	/^  def render("show.json", %{comment: comment}) do$/;"	f
+render	../lib/constable_web/views/api/interest_view.ex	/^  def render("index.json", %{interests: interests}) do$/;"	f
+render	../lib/constable_web/views/api/interest_view.ex	/^  def render("interest.json", %{interest: interest}) do$/;"	f
+render	../lib/constable_web/views/api/interest_view.ex	/^  def render("show.json", %{interest: interest}) do$/;"	f
+render	../lib/constable_web/views/api/subscription_view.ex	/^  def render("index.json", %{subscriptions: subscriptions}) do$/;"	f
+render	../lib/constable_web/views/api/subscription_view.ex	/^  def render("show.json", %{subscription: subscription}) do$/;"	f
+render	../lib/constable_web/views/api/subscription_view.ex	/^  def render("subscription.json", %{subscription: subscription}) do$/;"	f
+render	../lib/constable_web/views/api/user_interest_view.ex	/^  def render("index.json", %{user_interests: user_interests}) do$/;"	f
+render	../lib/constable_web/views/api/user_interest_view.ex	/^  def render("show.json", %{user_interest: user_interest}) do$/;"	f
+render	../lib/constable_web/views/api/user_interest_view.ex	/^  def render("user_interest.json", %{user_interest: user_interest}) do$/;"	f
+render	../lib/constable_web/views/api/user_view.ex	/^  def render("index.json", %{users: users}) do$/;"	f
+render	../lib/constable_web/views/api/user_view.ex	/^  def render("show.json", %{user: user}) do$/;"	f
+render	../lib/constable_web/views/api/user_view.ex	/^  def render("user.json", %{user: user}) do$/;"	f
+render	../lib/constable_web/views/auth_view.ex	/^  def render("show.json", %{user: user}) do$/;"	f
+render	../lib/constable_web/views/changeset_view.ex	/^  def render("error.json", %{changeset: changeset}) do$/;"	f
+render	../lib/constable_web/views/recipients_preview_view.ex	/^  def render("show.json", assigns) do$/;"	f
+render_comment_html	../lib/constable_web/channels/live_html_channel.ex	/^  defp render_comment_html(comment, current_user) do$/;"	f
+render_form	../lib/constable_web/controllers/announcement_controller.ex	/^  defp render_form(conn, action, announcement) do$/;"	f
+render_index	../lib/constable_web/controllers/announcement_controller.ex	/^  defp render_index(conn, index_page) do$/;"	f
+render_json	../test/support/conn_case_helper.ex	/^  def render_json(template, view, assigns) do$/;"	f
+render_json	../test/support/conn_case_helper.ex	/^  defmacro render_json(template, assigns) do$/;"	a
+render_recipients_preview_html	../lib/constable_web/views/recipients_preview_view.ex	/^  defp render_recipients_preview_html(assigns) do$/;"	f
+replace	../assets/js/user-autocomplete.js	/^    replace(user) {$/;"	f
+reply_header_formats	../lib/constable/services/email_reply_parser.ex	/^  defp reply_header_formats do$/;"	f
+request_authorization	../test/controllers/auth_controller_test.exs	/^  defp request_authorization(redirect_uri) do$/;"	f
+require_permitted_email_domain	../lib/constable/models/user.ex	/^  defp require_permitted_email_domain(changeset) do$/;"	f
+resetPreview	../assets/js/comment-form.js	/^function resetPreview() {$/;"	f
+results_for	../test/controllers/api/search_controller_test.exs	/^  defp results_for(conn, query: search_term) do$/;"	f
+results_for	../test/controllers/api/search_controller_test.exs	/^  defp results_for(conn, query: search_term, exclude: exclude) do$/;"	f
+router	../lib/constable_web.ex	/^  def router do$/;"	f
+run	../lib/mix/tasks/refresh_last_discussed_at.ex	/^  def run(_opts) do$/;"	f
+run	../lib/mix/tasks/send_daily_digest.ex	/^  def run(_) do$/;"	f
+run_plug	../test/plugs/api_auth_test.exs	/^  defp run_plug(conn) do$/;"	f
+run_plug	../test/plugs/fetch_current_user_test.exs	/^  defp run_plug(conn) do$/;"	f
+run_plug	../test/plugs/require_web_login_test.exs	/^  defp run_plug(conn) do$/;"	f
+saveCommentToLocalStorage	../assets/js/comment-form.js	/^function saveCommentToLocalStorage(event) {$/;"	f
+scrub	../lib/constable/services/customer_scrubber.ex	/^  def scrub({"style", attributes, [text]}) do$/;"	f
+scrub_attribute	../lib/constable/services/customer_scrubber.ex	/^  def scrub_attribute("style", {"media", value}), do: {"media", value}$/;"	f
+scrub_attribute	../lib/constable/services/customer_scrubber.ex	/^  def scrub_attribute("style", {"scoped", value}), do: {"scoped", value}$/;"	f
+scrub_attribute	../lib/constable/services/customer_scrubber.ex	/^  def scrub_attribute("style", {"type", value}), do: {"type", value}$/;"	f
+scrub_attributes	../lib/constable/services/customer_scrubber.ex	/^  defp scrub_attributes("style", attributes) do$/;"	f
+scrub_css	../lib/constable/services/customer_scrubber.ex	/^  defp scrub_css(text) do$/;"	f
+search	../lib/constable/models/announcement.ex	/^  def search(query \\\\ __MODULE__, search_term, exclude_interests: excludes) do$/;"	f
+send_email	../lib/constable/services/daily_digest.ex	/^  def send_email(users, time) do$/;"	f
+serializer	../lib/constable_web.ex	/^  def serializer do$/;"	f
+setRole	../assets/js/checkbox-switch.js	/^  const setRole = function(el) {$/;"	f
+set_interests	../lib/constable/models/serializers/announcement.ex	/^  def set_interests(announcement) do$/;"	f
+set_last_discussed_at	../lib/constable/models/comment.ex	/^  defp set_last_discussed_at(changeset, last_discussed_at) do$/;"	f
+set_user_id_cookie	../lib/constable/plugs/set_user_id_from_params.ex	/^  defp set_user_id_cookie(conn, user_id) do$/;"	f
+set_user_id_cookie	../lib/constable_web/controllers/auth_controller.ex	/^  defp set_user_id_cookie(conn, user) do$/;"	f
+settings_changeset	../lib/constable/models/user.ex	/^  def settings_changeset(user, params \\\\ %{}) do$/;"	f
+setupEditForm	../assets/js/comment-form.js	/^export function setupEditForm(usersForAutoComplete) {$/;"	f
+setupForm	../assets/js/announcement-form-mobile.js	/^export function setupForm() {$/;"	f
+setupImageUploader	../assets/js/textarea-image-uploader.js	/^export function setupImageUploader(selector) {$/;"	f
+setupInterestsSelect	../assets/js/announcement-form.js	/^  setupInterestsSelect() {$/;"	f
+setupNewForm	../assets/js/comment-form.js	/^export function setupNewForm(usersForAutoComplete) {$/;"	f
+setup_dependencies	../lib/constable/application.ex	/^  defp setup_dependencies do$/;"	f
+show	../lib/constable_web/controllers/announcement_controller.ex	/^  def show(conn, %{"id" => id}) do$/;"	f
+show	../lib/constable_web/controllers/api/announcement_controller.ex	/^  def show(conn, %{"id" => id}) do$/;"	f
+show	../lib/constable_web/controllers/api/interest_controller.ex	/^  def show(conn, %{"id" => id}) do$/;"	f
+show	../lib/constable_web/controllers/api/user_controller.ex	/^  def show(conn, %{"id" => "me"}) do$/;"	f
+show	../lib/constable_web/controllers/api/user_controller.ex	/^  def show(conn, %{"id" => id}) do$/;"	f
+show	../lib/constable_web/controllers/api/user_interest_controller.ex	/^  def show(conn, %{"id" => id}) do$/;"	f
+show	../lib/constable_web/controllers/email_preview_controller.ex	/^  def show(conn, %{"email_name" => email_name}) do$/;"	f
+show	../lib/constable_web/controllers/interest_controller.ex	/^  def show(conn, params) do$/;"	f
+show	../lib/constable_web/controllers/recipients_preview_controller.ex	/^  def show(conn, params) do$/;"	f
+show	../lib/constable_web/controllers/search_controller.ex	/^  def show(conn, params) do$/;"	f
+show	../lib/constable_web/controllers/settings_controller.ex	/^  def show(conn, _params) do$/;"	f
+show	../lib/constable_web/controllers/unsubscribe_controller.ex	/^  def show(conn, %{"id" => token}) do$/;"	f
+showMarkdownPreview	../assets/js/comment-form.js	/^function showMarkdownPreview() {$/;"	f
+sign_user_id	../lib/constable/models/user_identifier.ex	/^  def sign_user_id(conn, user_id) do$/;"	f
+simple_date	../lib/constable_web/views/shared_view.ex	/^  def simple_date(datetime) do$/;"	f
+slack_webhook_url	../lib/constable/services/slack_hook.ex	/^  defp slack_webhook_url do$/;"	f
+slugify	../lib/constable/models/announcement.ex	/^  defp slugify(title) do$/;"	f
+sorted_announcements	../lib/constable_web/controllers/interest_controller.ex	/^  defp sorted_announcements(interest) do$/;"	f
+start	../lib/constable/application.ex	/^  def start(_type, _args) do$/;"	f
+state_param	../lib/constable/services/oauth_redirect_strategy.ex	/^  def state_param(original_redirect_uri) do$/;"	f
+state_param	../test/controllers/auth_controller_test.exs	/^    def state_param(_) do$/;"	f
+state_param	../test/controllers/auth_controller_test.exs	/^    def state_param(original_redirect) do$/;"	f
+submit_search	../test/acceptance/user_searches_announcements_test.exs	/^  defp submit_search(session) do$/;"	f
+subscribe_author	../lib/constable/services/announcement_creator.ex	/^  defp subscribe_author(announcement) do$/;"	f
+subscribe_to_interest	../test/acceptance/user_manages_interests_test.exs	/^  defp subscribe_to_interest(session) do$/;"	f
+subscribe_user	../lib/constable/services/announcement_creator.ex	/^  defp subscribe_user(announcement, user_id) do$/;"	f
+subscribe_users	../lib/constable/services/announcement_creator.ex	/^  defp subscribe_users(announcement, interested_users) do$/;"	f
+subscribed_to_interest?	../test/acceptance/user_manages_interests_test.exs	/^  defp subscribed_to_interest?(session) do$/;"	f
+subscription_factory	../lib/constable/factory.ex	/^  def subscription_factory do$/;"	f
+subscription_id_merge_variable	../lib/constable_web/views/email_view.ex	/^  defp subscription_id_merge_variable do$/;"	f
+subscription_merge_var	../lib/constable_web/emails.ex	/^  defp subscription_merge_var(recipient, subscription) do$/;"	f
+subscription_with_announcement	../lib/constable_web/controllers/unsubscribe_controller.ex	/^  defp subscription_with_announcement do$/;"	f
+subscriptions_for	../lib/constable_web/controllers/api/subscription_controller.ex	/^  defp subscriptions_for(user) do$/;"	f
+success	../assets/js/textarea-image-uploader.js	/^    success() {$/;"	f
+switch	../assets/js/checkbox-switch.js	/^    switch (keyCode) {$/;"	f
+tag_with_interest	../lib/constable/factory.ex	/^  def tag_with_interest(announcement, interest) do$/;"	f
+template	../assets/js/user-autocomplete.js	/^    template(user, _term) {$/;"	f
+template_not_found	../lib/constable_web/views/error_view.ex	/^  def template_not_found(template, _assigns) do$/;"	f
+time_ago_in_words	../lib/constable_web/views/shared_view.ex	/^  def time_ago_in_words(time) do$/;"	f
+title	../lib/constable_web/views/shared_view.ex	/^  def title(%{page_title: title}) do$/;"	f
+title	../lib/constable_web/views/shared_view.ex	/^  def title(_my_assigns) do$/;"	f
+to_html	../lib/constable/markdown.ex	/^  def to_html(markdown) do$/;"	f
+to_param	../lib/constable/models/announcement.ex	/^  def to_param(%{slug: slug, id: id}) do$/;"	f
+to_param	../lib/constable/models/interest.ex	/^    def to_param(%{name: name}) do$/;"	f
+to_url	../lib/constable/services/google_strategy.ex	/^  defp to_url(client, endpoint) do$/;"	f
+today	../test/services/daily_digest_test.exs	/^  def today() do$/;"	f
+togglePreview	../assets/js/comment-form.js	/^function togglePreview() {$/;"	f
+toggleWrite	../assets/js/comment-form.js	/^function toggleWrite() {$/;"	f
+tokeninfo_url	../lib/constable/services/google_strategy.ex	/^  def tokeninfo_url(client, id_token) do$/;"	f
+translate_error	../lib/constable_web/views/error_helpers.ex	/^  def translate_error({msg, opts}) do$/;"	f
+translate_errors	../lib/constable_web/views/changeset_view.ex	/^  def translate_errors(changeset) do$/;"	f
+unauthorized	../lib/constable/plugs/require_api_login.ex	/^  def unauthorized(conn) do$/;"	f
+unauthorized	../lib/constable_web/controller_helper.ex	/^  def unauthorized(conn) do$/;"	f
+unique_commenters	../lib/constable_web/views/email_view.ex	/^  def unique_commenters(announcement, comments) do$/;"	f
+unique_commenters	../lib/constable_web/views/email_view.ex	/^  def unique_commenters(comments) do$/;"	f
+unsubscribe_from_interest	../test/acceptance/user_manages_interests_test.exs	/^  defp unsubscribe_from_interest(session) do$/;"	f
+unsubscribe_link	../lib/constable_web/views/email_view.ex	/^  def unsubscribe_link do$/;"	f
+unsubscribe_vars	../lib/constable_web/emails.ex	/^  defp unsubscribe_vars(recipients, announcement) do$/;"	f
+up	../priv/repo/migrations/20150212191157_add_user_to_announcements.exs	/^  def up do$/;"	f
+up	../priv/repo/migrations/20150826133822_add_null_constraint_to_username.exs	/^  def up do$/;"	f
+up	../priv/repo/migrations/20150918165253_set_autosubscribe_default_to_true.exs	/^  def up do$/;"	f
+up	../priv/repo/migrations/20150921194253_generate_subscription_tokens.exs	/^  def up do$/;"	f
+up	../priv/repo/migrations/20160422175132_add_last_discussed_to_announcements.exs	/^  def up do$/;"	f
+up	../priv/repo/migrations/20160624194052_add_not_null_constraint_to_required_foreign_keys.exs	/^  def up do$/;"	f
+update	../lib/constable/services/announcement_updater.ex	/^  def update(announcement, params, interest_names) do$/;"	f
+update	../lib/constable_web/controllers/announcement_controller.ex	/^  def update(conn, %{"id" => id, "announcement" => announcement_params}) do$/;"	f
+update	../lib/constable_web/controllers/api/announcement_controller.ex	/^  def update(conn, %{$/;"	f
+update	../lib/constable_web/controllers/api/announcement_controller.ex	/^  def update(conn, _params), do: send_resp(conn, 422, "")$/;"	f
+update	../lib/constable_web/controllers/api/interest_controller.ex	/^  def update(conn, %{"id" => id, "channel" => channel}) do$/;"	f
+update	../lib/constable_web/controllers/api/user_controller.ex	/^  def update(conn, %{"user" => params}) do$/;"	f
+update	../lib/constable_web/controllers/comment_controller.ex	/^  def update(conn, %{$/;"	f
+update	../lib/constable_web/controllers/settings_controller.ex	/^  def update(conn, %{"user" => user_params}) do$/;"	f
+update	../lib/constable_web/controllers/slack_channel_controller.ex	/^  def update(conn, %{"interest_id_or_name" => name, "interest" => %{"slack_channel" => channel}}) do$/;"	f
+update	../lib/constable_web/controllers/user_activation_controller.ex	/^  def update(conn, %{"id" => id}) do$/;"	f
+updateMarkdownPreview	../assets/js/comment-form.js	/^function updateMarkdownPreview() {$/;"	f
+updateRecipientsPreview	../assets/js/recipients-preview.js	/^export function updateRecipientsPreview(interests) {$/;"	f
+update_changeset	../lib/constable/models/announcement.ex	/^  def update_changeset(announcement, params) do$/;"	f
+update_changeset	../lib/constable/models/comment.ex	/^  def update_changeset(model, params) do$/;"	f
+update_channel_changeset	../lib/constable/models/interest.ex	/^  def update_channel_changeset(interest, channel_name) do$/;"	f
+update_interests	../lib/constable/services/announcement_updater.ex	/^  defp update_interests(announcement, names) do$/;"	f
+use	../assets/webpack.config.js	/^        use: {$/;"	o
+user_announcements	../lib/constable_web/controllers/announcement_controller.ex	/^  defp user_announcements(user_id) do$/;"	f
+user_autocomplete_json	../lib/constable_web/views/announcement_view.ex	/^  def user_autocomplete_json(users) do$/;"	f
+user_factory	../lib/constable/factory.ex	/^  def user_factory do$/;"	f
+user_from_email	../lib/constable_web/controllers/email_reply_controller.ex	/^  defp user_from_email(email_address) do$/;"	f
+user_has_interest	../test/controllers/auth_controller_test.exs	/^  defp user_has_interest(interest) do$/;"	f
+user_id_cookie_is_saved?	../test/controllers/auth_controller_test.exs	/^  defp user_id_cookie_is_saved?(conn, user) do$/;"	f
+user_interest_factory	../lib/constable/factory.ex	/^  def user_interest_factory do$/;"	f
+user_interests_for	../lib/constable_web/controllers/api/user_interest_controller.ex	/^  defp user_interests_for(user) do$/;"	f
+user_with_token	../lib/constable_web/channels/user_socket.ex	/^  defp user_with_token(token) do$/;"	f
+valid_email_address	../test/controllers/auth_controller_test.exs	/^  def valid_email_address, do: "fake@#{@permitted_email_domain}"$/;"	f
+validate_interests	../lib/constable/services/announcement_creator.ex	/^  defp validate_interests(changeset, interest_names) do$/;"	f
+verify_signed_user_id	../lib/constable/models/user_identifier.ex	/^  def verify_signed_user_id(conn) do$/;"	f
+view	../lib/constable_web.ex	/^  def view do$/;"	f
+view_interests	../test/acceptance/user_manages_interests_test.exs	/^  defp view_interests(session) do$/;"	f
+watchBody	../assets/js/announcement-form.js	/^  watchBody() {$/;"	f
+watchBody	../assets/js/comment-form.js	/^function watchBody() {$/;"	f
+watchCommentToggles	../assets/js/comment-form.js	/^function watchCommentToggles() {$/;"	f
+watchTitle	../assets/js/announcement-form.js	/^  watchTitle() {$/;"	f
+with_announcement_list_assocs	../lib/constable/models/announcement.ex	/^  def with_announcement_list_assocs(query \\\\ __MODULE__) do$/;"	f
+with_comments_by_user	../lib/constable/models/announcement.ex	/^  def with_comments_by_user(query \\\\ __MODULE__, user_id) do$/;"	f
+with_email	../lib/constable/models/user.ex	/^  def with_email(email) do$/;"	f
+with_interest	../lib/constable/factory.ex	/^  def with_interest(user, interest \\\\ insert(:interest)) do$/;"	f
+with_session	../test/support/conn_case_helper.ex	/^  def with_session(conn, session_params \\\\ []) do$/;"	f
+with_subscriber	../lib/constable/factory.ex	/^  def with_subscriber(announcement, user) do$/;"	f
+with_subscription	../lib/constable/factory.ex	/^  def with_subscription(user, announcement \\\\ insert(:announcement)) do$/;"	f
+yesterday	../lib/constable/time.ex	/^  def yesterday do$/;"	f
+yesterday	../test/services/daily_digest_test.exs	/^  def yesterday() do$/;"	f

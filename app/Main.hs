@@ -3,6 +3,7 @@ module Main
     ) where
 
 import Control.Monad.IO.Class (MonadIO, liftIO)
+import qualified Data.Aeson as A
 import qualified Data.ByteString.Lazy as BS
 import qualified Data.Text.Lazy as T
 import qualified Data.Text.Lazy.Encoding as T
@@ -19,17 +20,15 @@ main = runProgram =<< parseCLI
 runProgram :: MonadIO m => CtagsFromStdin -> m ()
 runProgram (CtagsFromStdin o) = either handleFailure handleSuccess =<< loadTags
   where
-    handleSuccess = toStdOut . T.unlines
+    handleSuccess = liftIO . BS.putStr . A.encode
     handleFailure = toStdErr . T.pack . renderError
     loadTags =
         if o
             then Ctags.tokensFromStdin
             else Ctags.tokensFromFile
 
-toStdErr, toStdOut :: MonadIO m => T.Text -> m ()
+toStdErr :: MonadIO m => T.Text -> m ()
 toStdErr = hPutStrLazy SIO.stderr
-
-toStdOut = hPutStrLazy SIO.stdout
 
 hPutStrLazy :: MonadIO m => SIO.Handle -> T.Text -> m ()
 hPutStrLazy h = liftIO . BS.hPutStr h . T.encodeUtf8
@@ -37,6 +36,7 @@ hPutStrLazy h = liftIO . BS.hPutStr h . T.encodeUtf8
 renderError :: Ctags.TagSearchOutcome -> String
 renderError (TagsFileNotFound _) = "Unable to find tags file"
 renderError (IOError e) = show e
+renderError (UnableToParseTags e) = show e
 
 parseCLI :: MonadIO m => m CtagsFromStdin
 parseCLI =
