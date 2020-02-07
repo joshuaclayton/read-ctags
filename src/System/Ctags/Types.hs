@@ -2,15 +2,19 @@
 
 module System.Ctags.Types
     ( TagSearchOutcome(..)
+    , Language(..)
     , CtagItem(..)
     , TokenKind(..)
     , TagField(..)
+    , calculateKind
+    , calculateLanguageForFile
     ) where
 
 import qualified Control.Exception as E
 import qualified Data.Aeson as A
 import qualified Data.Text.Lazy as T
 import GHC.Generics (Generic)
+import qualified System.FilePath as FP
 
 data TagSearchOutcome
     = TagsFileNotFound [String]
@@ -22,6 +26,7 @@ data CtagItem = CtagItem
     { ctagName :: T.Text
     , ctagFile :: FilePath
     , ctagAddress :: T.Text
+    , ctagLanguage :: Maybe Language
     , ctagFields :: [TagField]
     } deriving (Eq, Show, Generic)
 
@@ -29,6 +34,8 @@ instance A.ToJSON CtagItem
 
 data TagField
     = KindField TokenKind
+    | ClassField T.Text
+    | ModuleField T.Text
     | Field T.Text
             T.Text
     deriving (Eq, Show, Generic)
@@ -37,19 +44,194 @@ instance A.ToJSON TagField
 
 instance A.ToJSON TokenKind
 
+data Language
+    = CSS
+    | Elixir
+    | Elm
+    | HTML
+    | JSON
+    | JavaScript
+    | Markdown
+    | Ruby
+    | SCSS
+    | Sh
+    | TypeScript
+    deriving (Show, Eq, Generic)
+
+instance A.ToJSON Language
+
+calculateLanguageForFile :: FilePath -> Maybe Language
+calculateLanguageForFile = calculateLanguage . FP.takeExtension
+
+calculateLanguage :: String -> Maybe Language
+calculateLanguage ".css" = Just CSS
+calculateLanguage ".ex" = Just Elixir
+calculateLanguage ".exs" = Just Elixir
+calculateLanguage ".elm" = Just Elm
+calculateLanguage ".html" = Just HTML
+calculateLanguage ".json" = Just JSON
+calculateLanguage ".js" = Just JavaScript
+calculateLanguage ".jsx" = Just JavaScript
+calculateLanguage ".md" = Just Markdown
+calculateLanguage ".rb" = Just Ruby
+calculateLanguage ".scss" = Just SCSS
+calculateLanguage ".ts" = Just TypeScript
+calculateLanguage ".tsx" = Just TypeScript
+calculateLanguage "" = Just Sh
+calculateLanguage _ = Nothing
+
+calculateKind :: Language -> Char -> TokenKind
+calculateKind CSS 'c' = Class
+calculateKind CSS 'i' = Id
+calculateKind CSS 's' = Selector
+calculateKind Elixir 'a' = Macro
+calculateKind Elixir 'c' = Callback
+calculateKind Elixir 'd' = Delegate
+calculateKind Elixir 'e' = Exception
+calculateKind Elixir 'f' = Function
+calculateKind Elixir 'g' = Guard
+calculateKind Elixir 'i' = Implementation
+calculateKind Elixir 'm' = Module
+calculateKind Elixir 'o' = Operator
+calculateKind Elixir 'p' = Protocol
+calculateKind Elixir 'r' = Record
+calculateKind Elixir 't' = Test
+calculateKind Elixir 'y' = Type
+calculateKind Elm 'a' = Alias
+calculateKind Elm 'c' = Constructor
+calculateKind Elm 'f' = Function
+calculateKind Elm 'm' = Module
+calculateKind Elm 'n' = Namespace
+calculateKind Elm 'p' = Port
+calculateKind Elm 't' = Type
+calculateKind HTML 'C' = Stylesheet
+calculateKind HTML 'I' = Id
+calculateKind HTML 'J' = Script
+calculateKind HTML 'a' = Anchor
+calculateKind HTML 'c' = Class
+calculateKind HTML 'h' = Heading1
+calculateKind HTML 'i' = Heading2
+calculateKind HTML 'j' = Heading3
+calculateKind JSON 'a' = Array
+calculateKind JSON 'b' = Boolean
+calculateKind JSON 'n' = Number
+calculateKind JSON 'o' = Object
+calculateKind JSON 's' = String
+calculateKind JSON 'z' = Null
+calculateKind JavaScript 'C' = Constant
+calculateKind JavaScript 'G' = Getter
+calculateKind JavaScript 'S' = Setter
+calculateKind JavaScript 'c' = Class
+calculateKind JavaScript 'f' = Function
+calculateKind JavaScript 'g' = Generator
+calculateKind JavaScript 'm' = Method
+calculateKind JavaScript 'p' = Property
+calculateKind JavaScript 'v' = Variable
+calculateKind Markdown 'S' = Subsection
+calculateKind Markdown 'T' = L4Subsection
+calculateKind Markdown 'c' = Chapter
+calculateKind Markdown 's' = Section
+calculateKind Markdown 't' = SubSubsection
+calculateKind Markdown 'u' = L5Subsection
+calculateKind Ruby 'S' = SingletonMethod
+calculateKind Ruby 'c' = Class
+calculateKind Ruby 'f' = Method
+calculateKind Ruby 'm' = Module
+calculateKind SCSS 'P' = Placeholder
+calculateKind SCSS 'c' = Class
+calculateKind SCSS 'f' = Function
+calculateKind SCSS 'i' = Id
+calculateKind SCSS 'm' = Mixin
+calculateKind SCSS 'v' = Variable
+calculateKind SCSS 'z' = Parameter
+calculateKind Sh 'a' = Alias
+calculateKind Sh 'f' = Function
+calculateKind Sh 'h' = Heredoc
+calculateKind Sh 's' = Script
+calculateKind TypeScript 'C' = Constant
+calculateKind TypeScript 'G' = Generator
+calculateKind TypeScript 'a' = Alias
+calculateKind TypeScript 'c' = Class
+calculateKind TypeScript 'e' = Enumerator
+calculateKind TypeScript 'f' = Function
+calculateKind TypeScript 'g' = Enum
+calculateKind TypeScript 'i' = Interface
+calculateKind TypeScript 'l' = Local
+calculateKind TypeScript 'm' = Method
+calculateKind TypeScript 'n' = Namespace
+calculateKind TypeScript 'p' = Property
+calculateKind TypeScript 'v' = Variable
+calculateKind TypeScript 'z' = Parameter
+calculateKind l c = MissingLanguageToken l c
+
 data TokenKind
+ -- CSS
     = Class
-    | Define
-    | Enumerator
+    | Id
+    | Selector
+ -- Elixir
+    | Macro
+    | Callback
+    | Delegate
+    | Exception
     | Function
-    | FileName
-    | EnumerationName
-    | Member
-    | FunctionPrototype
-    | StructureName
-    | Typedef
-    | UnionName
+    | Guard
+    | Implementation
+    | Module
+    | Operator
+    | Protocol
+    | Record
+    | Test
+    | Type
+ -- Elm
+    | Alias
+    | Constructor
+    | Namespace
+    | Port
+ -- HTML
+    | Stylesheet
+    | Script
+    | Anchor
+    | Heading1
+    | Heading2
+    | Heading3
+ -- JSON
+    | Array
+    | Boolean
+    | Number
+    | Object
+    | String
+    | Null
+ -- JavaScript
+    | Constant
+    | Getter
+    | Setter
+    | Generator
+    | Method
+    | Property
     | Variable
+ -- Markdown
+    | Subsection
+    | L4Subsection
+    | Chapter
+    | Section
+    | SubSubsection
+    | L5Subsection
+ -- Ruby
+    | SingletonMethod
+ -- SCSS
+    | Placeholder
+    | Mixin
+    | Parameter
+ -- Sh
+    | Heredoc
+ -- TypeScript
+    | Enumerator
+    | Enum
+    | Interface
+    | Local
     | Undefined
+    | MissingLanguageToken Language
+                           Char
     | Unknown Char
     deriving (Eq, Show, Generic)

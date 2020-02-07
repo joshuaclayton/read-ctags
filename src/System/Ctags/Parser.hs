@@ -29,17 +29,21 @@ metaDataParser :: Parser (Maybe CtagItem)
 metaDataParser = M.string "!_TAG" *> toNewline $> Nothing <?> "metadata"
 
 ctagWithoutFieldsParser :: Parser (Maybe CtagItem)
-ctagWithoutFieldsParser =
-    Just <$>
-    (CtagItem <$> tagNameParser <*> tagFileParser <*>
-     tagAddressWithoutFieldsParser <*>
-     pure [])
+ctagWithoutFieldsParser = do
+    tagName <- tagNameParser
+    tagFile <- tagFileParser
+    tagAddress <- tagAddressWithoutFieldsParser
+    let language = calculateLanguageForFile tagFile
+    return $ Just $ CtagItem tagName tagFile tagAddress language []
 
 ctagWithFieldsParser :: Parser (Maybe CtagItem)
-ctagWithFieldsParser =
-    Just <$>
-    (CtagItem <$> tagNameParser <*> tagFileParser <*> tagAddressWithFieldsParser <*>
-     tagFieldsParser)
+ctagWithFieldsParser = do
+    tagName <- tagNameParser
+    tagFile <- tagFileParser
+    tagAddress <- tagAddressWithFieldsParser
+    let language = calculateLanguageForFile tagFile
+    tagFields <- tagFieldsParser language
+    return $ Just $ CtagItem tagName tagFile tagAddress language tagFields
 
 tagAddressWithFieldsParser :: Parser T.Text
 tagAddressWithFieldsParser =
@@ -57,34 +61,25 @@ tagFileParser = toTab <?> "tagFile"
 toTab :: Parser String
 toTab = untilParser '\t' <* M.tab
 
-tagFieldsParser :: Parser [TagField]
-tagFieldsParser = M.tab *> M.sepBy tagFieldParser M.tab
+tagFieldsParser :: Maybe Language -> Parser [TagField]
+tagFieldsParser l = M.tab *> M.sepBy (tagFieldParser l) M.tab
 
-tagFieldParser :: Parser TagField
-tagFieldParser = M.try fieldParser <|> kindParser
+tagFieldParser :: Maybe Language -> Parser TagField
+tagFieldParser l =
+    M.try classFieldParser <|> M.try moduleFieldParser <|> M.try fieldParser <|>
+    kindParser
   where
-    kindParser = KindField <$> tokenKindParser
+    kindParser = KindField <$> tokenKindParser l
+    classFieldParser = ClassField <$> (M.string "class:" *> valueParser)
+    moduleFieldParser = ModuleField <$> (M.string "module:" *> valueParser)
+    valueParser = M.takeWhileP Nothing (\c -> c /= '\t' && c /= '\n')
     fieldParser =
         Field <$> (T.pack <$> M.many M.alphaNumChar <* M.char ':') <*>
-        (T.pack <$> M.many M.alphaNumChar)
+        valueParser
 
-tokenKindParser :: Parser TokenKind
-tokenKindParser =
-    M.choice
-        [ M.char 'c' $> Class
-        , M.char 'd' $> Define
-        , M.char 'e' $> Enumerator
-        , M.char 'f' $> Function
-        , M.char 'F' $> FileName
-        , M.char 'g' $> EnumerationName
-        , M.char 'm' $> Member
-        , M.char 'p' $> FunctionPrototype
-        , M.char 's' $> StructureName
-        , M.char 't' $> Typedef
-        , M.char 'u' $> UnionName
-        , M.char 'v' $> Variable
-        , Unknown <$> M.letterChar
-        ]
+tokenKindParser :: Maybe Language -> Parser TokenKind
+tokenKindParser (Just language) = calculateKind language <$> M.letterChar
+tokenKindParser Nothing = Unknown <$> M.letterChar
 
 untilParser :: Char -> Parser String
 untilParser c = M.some (M.satisfy (not . (==) c))

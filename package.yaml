@@ -27,6 +27,7 @@ dependencies:
 - containers
 - megaparsec
 - aeson
+- filepath
 
 default-extensions:  OverloadedStrings
 

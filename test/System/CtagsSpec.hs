@@ -41,6 +41,7 @@ spec =
                       "A11YswitchCheck"
                       "../assets/js/checkbox-switch.js"
                       "/^const A11YswitchCheck = function() {$/"
+                      (Just JavaScript)
                       []
                 ]
         it "handles tag fields" $ do
@@ -52,7 +53,8 @@ spec =
                       "working_now?"
                       "../app/models/person.rb"
                       "/^  def working_now?$/"
-                      [KindField Function, Field "class" "Person"]
+                      (Just Ruby)
+                      [KindField Method, ClassField "Person"]
                 ]
 
 lenientUtf8Decode :: BS.ByteString -> T.Text
