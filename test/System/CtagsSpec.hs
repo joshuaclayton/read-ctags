@@ -8,6 +8,7 @@ import qualified Data.Text.Lazy as T
 import qualified Data.Text.Lazy.Encoding as T
 import System.Ctags
 import System.Ctags.IO (safeReadFile)
+import System.Ctags.Parser
 import System.Ctags.Types
 import Test.Hspec
 
@@ -42,6 +43,7 @@ spec =
                       "../assets/js/checkbox-switch.js"
                       "/^const A11YswitchCheck = function() {$/"
                       (Just JavaScript)
+                      Undefined
                       []
                 ]
         it "handles tag fields" $ do
@@ -54,7 +56,8 @@ spec =
                       "../app/models/person.rb"
                       "/^  def working_now?$/"
                       (Just Ruby)
-                      [KindField Method, ClassField "Person"]
+                      Method
+                      [ClassField "Person"]
                 ]
 
 lenientUtf8Decode :: BS.ByteString -> T.Text

@@ -1,5 +1,3 @@
-{-# LANGUAGE DeriveGeneric #-}
-
 module System.Ctags.Types
     ( TagSearchOutcome(..)
     , Language(..)
@@ -12,8 +10,9 @@ module System.Ctags.Types
 
 import qualified Control.Exception as E
 import qualified Data.Aeson as A
+import Data.Aeson ((.=))
+import qualified Data.Text as Text
 import qualified Data.Text.Lazy as T
-import GHC.Generics (Generic)
 import qualified System.FilePath as FP
 
 data TagSearchOutcome
@@ -23,26 +22,41 @@ data TagSearchOutcome
     deriving (Show)
 
 data CtagItem = CtagItem
-    { ctagName :: T.Text
-    , ctagFile :: FilePath
-    , ctagAddress :: T.Text
-    , ctagLanguage :: Maybe Language
-    , ctagFields :: [TagField]
-    } deriving (Eq, Show, Generic)
+    { ctagName :: !String
+    , ctagFile :: !FilePath
+    , ctagAddress :: !String
+    , ctagLanguage :: !(Maybe Language)
+    , ctagKind :: !TokenKind
+    , ctagFields :: ![TagField]
+    } deriving (Eq, Show)
 
-instance A.ToJSON CtagItem
+instance A.ToJSON CtagItem where
+    toJSON ctagItem =
+        A.object
+            [ "name" .= ctagName ctagItem
+            , "file" .= ctagFile ctagItem
+            , "language" .= A.toJSON (ctagLanguage ctagItem)
+            , "kind" .= A.toJSON (ctagKind ctagItem)
+            , "tags" .= A.toJSON (ctagFields ctagItem)
+            ]
 
 data TagField
-    = KindField TokenKind
-    | ClassField T.Text
-    | ModuleField T.Text
-    | Field T.Text
-            T.Text
-    deriving (Eq, Show, Generic)
+    = ClassField !String
+    | ModuleField !String
+    | Field !String
+            !String
+    deriving (Eq, Show)
 
-instance A.ToJSON TagField
+instance A.ToJSON TagField where
+    toJSON (ClassField t) = A.object ["class" .= t]
+    toJSON (ModuleField t) = A.object ["module" .= t]
+    toJSON (Field k v) = A.object [Text.pack k .= v]
 
-instance A.ToJSON TokenKind
+instance A.ToJSON TokenKind where
+    toJSON Undefined = A.Null
+    toJSON (MissingLanguageToken _ _) = A.String "missing"
+    toJSON (Unknown _) = A.String "unknown"
+    toJSON v = A.String $ toToken v
 
 data Language
     = CSS
@@ -56,9 +70,14 @@ data Language
     | SCSS
     | Sh
     | TypeScript
-    deriving (Show, Eq, Generic)
+    deriving (Show, Eq)
 
-instance A.ToJSON Language
+instance A.ToJSON Language where
+    toJSON = A.String . toToken
+
+{-# INLINE toToken #-}
+toToken :: Show a => a -> Text.Text
+toToken = Text.pack . show
 
 calculateLanguageForFile :: FilePath -> Maybe Language
 calculateLanguageForFile = calculateLanguage . FP.takeExtension
@@ -231,7 +250,7 @@ data TokenKind
     | Interface
     | Local
     | Undefined
-    | MissingLanguageToken Language
-                           Char
+    | MissingLanguageToken !Language
+                           !Char
     | Unknown Char
-    deriving (Eq, Show, Generic)
+    deriving (Eq, Show)

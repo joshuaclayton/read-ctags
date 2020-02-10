@@ -3,7 +3,6 @@ module System.Ctags
     , CtagItem(..)
     , tokensFromFile
     , tokensFromStdin
-    , P.parse
     ) where
 
 import Control.Monad.IO.Class (MonadIO)
