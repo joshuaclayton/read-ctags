@@ -69,7 +69,9 @@ data Language
     | Ruby
     | SCSS
     | Sh
+    | SVG
     | TypeScript
+    | XML
     deriving (Show, Eq)
 
 instance A.ToJSON Language where
@@ -94,8 +96,10 @@ calculateLanguage ".jsx" = Just JavaScript
 calculateLanguage ".md" = Just Markdown
 calculateLanguage ".rb" = Just Ruby
 calculateLanguage ".scss" = Just SCSS
+calculateLanguage ".svg" = Just SVG
 calculateLanguage ".ts" = Just TypeScript
 calculateLanguage ".tsx" = Just TypeScript
+calculateLanguage ".xml" = Just XML
 calculateLanguage "" = Just Sh
 calculateLanguage _ = Nothing
 
@@ -181,6 +185,11 @@ calculateKind TypeScript 'n' = Namespace
 calculateKind TypeScript 'p' = Property
 calculateKind TypeScript 'v' = Variable
 calculateKind TypeScript 'z' = Parameter
+calculateKind XML 'i' = Id
+calculateKind XML 'n' = NSPrefix
+calculateKind XML 'r' = Root
+calculateKind SVG 'd' = Def
+calculateKind SVG v = calculateKind XML v
 calculateKind l c = MissingLanguageToken l c
 
 data TokenKind
@@ -244,11 +253,16 @@ data TokenKind
     | Parameter
  -- Sh
     | Heredoc
+ -- SVG
+    | Def
  -- TypeScript
     | Enumerator
     | Enum
     | Interface
     | Local
+  -- XML
+    | NSPrefix
+    | Root
     | Undefined
     | MissingLanguageToken !Language
                            !Char
