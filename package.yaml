@@ -28,6 +28,7 @@ dependencies:
 - megaparsec
 - aeson
 - filepath
+- mtl
 
 default-extensions:  OverloadedStrings
 
